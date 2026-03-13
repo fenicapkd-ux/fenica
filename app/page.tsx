@@ -1,4 +1,59 @@
+import type { Metadata } from 'next';
+import Script from 'next/script';
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời Bền Vững',
+  description:
+    'Căn hộ fenica sở hữu vị trí chiến lược, thiết kế tinh tế, tiện ích đẳng cấp, lựa chọn lý tưởng để an cư lâu dài và đầu tư sinh lời bền vững tại thị trường bất động sản đầy tiềm năng.',
+
+  keywords: [
+    'fenica',
+    'căn hộ fenica',
+    'dự án fenica',
+    'căn hộ cao cấp fenica',
+    'mua căn hộ fenica',
+    'đầu tư căn hộ fenica',
+    'bất động sản fenica',
+    'căn hộ sang trọng',
+    'dự án căn hộ đầu tư'
+  ],
+
+  openGraph: {
+    title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời',
+    description:
+      'fenica mang đến không gian sống hiện đại, vị trí chiến lược, tiềm năng tăng giá bền vững cho nhà đầu tư.',
+    url: 'https://fenica.xyz',
+    siteName: 'fenica',
+    images: [
+      {
+        url: 'https://fenica.xyz/images/fenica-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Căn hộ fenica'
+      }
+    ],
+    locale: 'vi_VN',
+    type: 'website'
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng',
+    description:
+      'Không gian sống đẳng cấp – cơ hội đầu tư sinh lời dài hạn.',
+    images: ['https://fenica.xyz/images/fenica-og.jpg']
+  },
+
+  alternates: {
+    canonical: 'https://fenica.xyz/'
+  },
+
+  robots: {
+    index: true,
+    follow: true
+  }
+}
 
 export default function Home() {
   return (
@@ -60,6 +115,25 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <Script
+        id="fenica-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ApartmentComplex',
+            name: 'fenica',
+            description:
+              'Dự án căn hộ fenica sở hữu vị trí chiến lược, thiết kế tinh tế, phù hợp an cư và đầu tư sinh lời.',
+            url: 'https://yourdomain.com/fenica',
+            image: 'https://yourdomain.com/images/fenica-og.jpg',
+            address: {
+              '@type': 'PostalAddress',
+              addressCountry: 'VN'
+            }
+          })
+        }}
+      />
     </div>
   );
 }

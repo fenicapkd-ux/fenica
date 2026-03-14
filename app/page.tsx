@@ -10,6 +10,9 @@ import Testimonials from '@/components/organism/testimonials';
 import PropertyGrid from '@/components/organism/property-grid';
 
 export const metadata: Metadata = {
+  verification: {
+    google: "A_wADTxtjGs5_7CTpKnD7fwi7KRyvAxLjnvB4p4EcAI"
+  },
   title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời Bền Vững',
   description:
     'Căn hộ fenica sở hữu vị trí chiến lược, thiết kế tinh tế, tiện ích đẳng cấp, lựa chọn lý tưởng để an cư lâu dài và đầu tư sinh lời bền vững tại thị trường bất động sản đầy tiềm năng.',
@@ -91,6 +94,82 @@ export default function Home() {
               '@type': 'PostalAddress',
               addressCountry: 'VN'
             }
+          })
+        }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Trang chủ",
+                item: "https://fenica.xyz"
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Dự án Fenica",
+                item: "https://fenica.xyz/#du-an"
+              }
+            ]
+          })
+        }}
+      />
+      <Script
+        id="realestate-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "RealEstateListing",
+            name: "Căn hộ Fenica",
+            description:
+              "Dự án căn hộ Fenica với thiết kế hiện đại và tiềm năng tăng giá cao.",
+            url: "https://fenica.xyz",
+            image: "https://fenica.xyz/images/fenica-og.jpg",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "VND",
+              availability: "https://schema.org/InStock"
+            },
+            address: {
+              "@type": "PostalAddress",
+              addressCountry: "VN"
+            }
+          })
+        }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Căn hộ Fenica nằm ở đâu?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Fenica tọa lạc tại vị trí chiến lược với kết nối giao thông thuận tiện."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Có nên đầu tư căn hộ Fenica không?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Fenica có tiềm năng tăng giá tốt nhờ vị trí và hệ thống tiện ích hiện đại."
+                }
+              }
+            ]
           })
         }}
       />

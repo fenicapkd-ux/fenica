@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 type FaqProp = {
   classCss?: string;
 }
-const Faq = ({classCss = "grid grid-cols-2"}: FaqProp) => {
+const Faq = ({classCss = "grid grid-cols-1 md:grid-cols-2"}: FaqProp) => {
   // Dữ liệu Mock cho Dự án Fenica - Căn hộ giới trẻ
   const faqData = {
     tag: "Hỏi đáp",
@@ -40,7 +40,7 @@ const Faq = ({classCss = "grid grid-cols-2"}: FaqProp) => {
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-20 font-sans text-slate-800">
-      <div className={cn(classCss , "md:flex-row md:items-start md:gap-16")}>
+      <div className={cn(classCss , "flex-col md:flex-row md:items-start md:gap-16")}>
         {/* Gallery - Lưới ảnh bên trái */}
         <div className="w-full flex flex-col md:flex-row gap-5 mb-10 md:mb-0">
           <div className="w-full md:w-[55%] flex flex-col gap-5">

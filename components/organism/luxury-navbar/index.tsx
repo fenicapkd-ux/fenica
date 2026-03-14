@@ -7,7 +7,7 @@ import Link from 'next/link'
 const menuItems = [
   { label: 'Trang chủ', href: '/' },
   { label: 'Tổng quan dự án', href: '/tong-quan' },
-  { label: 'Mặt bằng căn hộ', href: '/mat-bang' },
+  { label: 'Mặt bằng', href: '/mat-bang' },
   { label: 'Tiện ích', href: '/tien-ich' },
   { label: 'Sản phẩm', href: '/san-pham' },
   { label: 'Tài liệu PDF', href: '/tai-lieu/brochure-fenica' },

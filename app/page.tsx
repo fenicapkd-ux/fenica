@@ -74,6 +74,13 @@ export default function Home() {
       <main className='w-full'>
         <Hero />
         <ProjectOverview {...fenicaOverview} />
+        <div className='w-full'>
+          <img
+            src={"/images/ban-do-vi-tri-fenica.png"}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            alt={""}
+          />
+        </div>
         <Properties />
         <Testimonials />
         <Featured />

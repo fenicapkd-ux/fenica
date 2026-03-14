@@ -31,7 +31,7 @@ const Testimonials = () => {
         {/* Header and Navigation */}
         <div className="flex justify-between items-start mb-16">
           <div className="space-y-3">
-            <div className="flex items-center gap-2 text-[#c98266] font-bold">
+            <div className="flex items-center gap-2 text-white font-bold">
               <div className="w-2 h-4 bg-[#c98266] rounded-sm" />
               <span className="text-xs uppercase tracking-widest">{testimonialData.tag}</span>
             </div>
@@ -55,11 +55,11 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           {/* Quote and Client Info - Left side */}
           <div className="md:col-span-7 space-y-12">
-            <div className="flex gap-6 items-start">
+            <div className="flex flex-col md:flex-row gap-6 items-start">
               <div className="text-[#c98266] p-3 rounded-2xl bg-[#0f172a] mt-1 shadow-inner">
                 <Home size={28} />
               </div>
-              <blockquote className="text-2xl font-medium text-gray-200 leading-relaxed max-w-2xl">
+              <blockquote className="text-base md:text-2xl font-medium text-gray-200 leading-relaxed max-w-2xl">
                 “{testimonialData.quote}”
               </blockquote>
             </div>

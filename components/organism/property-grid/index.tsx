@@ -30,21 +30,7 @@ const PropertyGrid = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-24">
-      {/* Header Section */}
-      <div className="text-center space-y-4 mb-16">
-        <div className="flex justify-center items-center gap-2 text-[#c98266] font-bold">
-          <div className="w-2 h-4 bg-[#c98266] rounded-sm" />
-          <span className="text-xs uppercase tracking-widest">Sản phẩm hiện có</span>
-        </div>
-        <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-          Khám phá không gian sống cảm hứng
-        </h2>
-        <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-          Nơi sự tinh tế, phong cách và sự tiện nghi hội tụ, kiến tạo tổ ấm hoàn hảo cho thế hệ trẻ.
-        </p>
-      </div>
-
+    <section className="max-w-7xl mx-auto px-6 py-12">
       {/* Grid Container */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {propertyList.map((item) => (

@@ -8,6 +8,9 @@ import Faq from '@/components/organism/faq';
 import Blog from '@/components/organism/blog';
 import Testimonials from '@/components/organism/testimonials';
 import PropertyGrid from '@/components/organism/property-grid';
+import SectionHeader from '@/components/molecules/section-header';
+import { fenicaOverview } from '@/mock-data/overview.data';
+import ProjectOverview from '@/components/organism/project-overview';
 
 export const metadata: Metadata = {
   verification: {
@@ -70,9 +73,15 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className='w-full'>
         <Hero />
+        <ProjectOverview {...fenicaOverview} />
         <Properties />
         <Testimonials />
         <Featured />
+        <SectionHeader
+          badge="Sản phẩm hiện có"
+          title="Khám phá không gian sống cảm hứng"
+          description="Nơi sự tinh tế, phong cách và sự tiện nghi hội tụ, kiến tạo tổ ấm hoàn hảo cho thế hệ trẻ."
+        />
         <PropertyGrid />
         <Blog />
         <Cta />

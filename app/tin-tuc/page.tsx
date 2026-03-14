@@ -6,7 +6,7 @@ export default function BlogPage() {
 
   return (
     <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Blog</h1>
+      <h1 className="text-3xl font-bold mb-6">Tin tức</h1>
 
       {posts.map((post) => (
         <div key={post.slug} className="mb-6 border-b pb-4">

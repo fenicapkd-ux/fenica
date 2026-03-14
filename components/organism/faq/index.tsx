@@ -1,8 +1,11 @@
 "use client"
 import { useState } from 'react';
 import { LayoutGrid, ChevronDown } from 'lucide-react';
-
-const Faq = () => {
+import { cn } from '@/lib/utils';
+type FaqProp = {
+  classCss?: string;
+}
+const Faq = ({classCss = "grid grid-cols-2"}: FaqProp) => {
   // Dữ liệu Mock cho Dự án Fenica - Căn hộ giới trẻ
   const faqData = {
     tag: "Hỏi đáp",
@@ -37,9 +40,9 @@ const Faq = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-20 font-sans text-slate-800">
-      <div className="flex flex-col md:flex-row md:items-start md:gap-16">
+      <div className={cn(classCss , "md:flex-row md:items-start md:gap-16")}>
         {/* Gallery - Lưới ảnh bên trái */}
-        <div className="w-full md:w-[45%] flex flex-col md:flex-row gap-5 mb-10 md:mb-0">
+        <div className="w-full flex flex-col md:flex-row gap-5 mb-10 md:mb-0">
           <div className="w-full md:w-[55%] flex flex-col gap-5">
             <div className="rounded-[2rem] overflow-hidden aspect-[4/3] shadow-xl">
               <img 
@@ -73,7 +76,7 @@ const Faq = () => {
         </div>
 
         {/* Content - Phần Hỏi đáp bên phải */}
-        <div className="w-full md:w-[55%] flex-1 space-y-8">
+        <div className="w-full flex-1 space-y-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-[#c98266] font-bold">
               <LayoutGrid size={18} />

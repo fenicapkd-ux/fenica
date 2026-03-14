@@ -17,9 +17,9 @@ const Footer = () => {
       {
         title: "Khám phá",
         items: [
-          { name: "Trang chủ", href: "#" },
+          { name: "Trang chủ", href: "/" },
           { name: "Danh mục", href: "#" },
-          { name: "Sản phẩm", href: "#" },
+          { name: "Sản phẩm", href: "/san-pham" },
           { name: "Căn hộ tiêu biểu", href: "#" }
         ]
       },
@@ -27,17 +27,17 @@ const Footer = () => {
         title: "Hỗ trợ",
         items: [
           { name: "Đánh giá khách hàng", href: "#" },
-          { name: "Tin tức dự án", href: "#" },
-          { name: "Hỏi đáp (FAQs)", href: "#" },
-          { name: "Trang lỗi 404", href: "#" }
+          { name: "Tin tức dự án", href: "/tin-tuc" },
+          { name: "Hỏi đáp (FAQs)", href: "/cau-hoi" },
+          { name: "Trang lỗi 404", href: "/404" }
         ]
       }
     ],
     bottom: {
       copyright: "© 2026 Dự án Fenica. Bảo lưu mọi quyền.",
       links: [
-        { name: "Điều khoản dịch vụ", href: "#" },
-        { name: "Chính sách bảo mật", href: "#" }
+        { name: "Điều khoản dịch vụ", href: "/dieu-khoan-dich-vu" },
+        { name: "Chính sách bảo mật", href: "/chinh-sach-bao-mat" }
       ]
     }
   };

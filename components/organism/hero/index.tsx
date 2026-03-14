@@ -28,27 +28,6 @@
             }}
         />
 
-        {/* Navigation */}
-        <nav className="relative z-10 flex justify-between items-center px-8 py-6 lg:px-16">
-            <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-md">
-                <div className="w-4 h-4 border-2 border-white rotate-45" />
-            </div>
-            <span className="text-xl font-semibold tracking-tight">Fenica</span>
-            </div>
-            
-            <div className="flex items-center gap-8">
-            <a href="tel:+84799036842" className="hidden md:flex items-center gap-2 text-sm font-medium">
-                <Phone size={16} />
-                +84 0799 036 842
-            </a>
-            <button className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-medium transition hover:bg-opacity-90">
-                <Menu size={18} />
-                Menu
-            </button>
-            </div>
-        </nav>
-
         {/* Main Content */}
         <div className="relative z-10 px-8 lg:px-16 pt-20 pb-32">
             <div className="max-w-2xl">

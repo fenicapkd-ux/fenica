@@ -1,3 +1,4 @@
+import Link from "next/link";
 import VideoPopup from "./_component/video-popup";
 
 
@@ -18,9 +19,9 @@ export default function DemoOne() {
             <button type="button" className="text-heading rounded-2xl border border-buffer hover:border-default bg-neutral-primary focus:ring-4 focus:outline-none focus:ring-neutral-tertiary rounded-base text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Gaming</button>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="rounded-xl shadow overflow-hidden">
+            <Link href={"/images/sanh-fenica.webp"} className="rounded-xl shadow overflow-hidden">
                 <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
-            </div>
+            </Link>
             <div className="rounded-xl shadow overflow-hidden">
                 <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>

@@ -1,10 +1,9 @@
-import ProjectOverview from "@/components/organism/project-overview";
-import { fenicaOverview } from "@/mock-data/overview.data";
+import Properties from "@/components/organism/properties";
 
 export default function AboutPage() {
   return (
     <main>
-       <ProjectOverview {...fenicaOverview} />
+       <Properties />
     </main>
   )
 }

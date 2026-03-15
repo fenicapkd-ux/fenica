@@ -1,4 +1,4 @@
-    import { Phone, Menu, Bed, Bath, Car } from 'lucide-react';
+    import { Bed, Bath, Car } from 'lucide-react';
 
     const Hero = () => {
     const projectData = {
@@ -32,15 +32,15 @@
         <div className="relative z-10 px-8 lg:px-16 pt-20 pb-32">
             <div className="max-w-2xl">
             <p className="text-lg opacity-90 mb-4">{projectData.location}</p>
-            <h1 className="text-7xl md:text-8xl font-bold leading-tight mb-8">
-                Căn hộ<br />Giới trẻ
+            <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-8">
+                Căn hộ<br /> giới trẻ
             </h1>
             
-            <div className="flex gap-4">
-                <button className="bg-white text-black px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-gray-100 transition">
+            <div className="flex gap-4 text-xs md:text-base">
+                <button className="bg-white text-black px-4 md:px-8 py-2 md:py-4 rounded-full font-bold uppercase tracking-wider hover:bg-gray-100 transition">
                 Nhận đăng ký
                 </button>
-                <button className="border border-white/40 backdrop-blur-md px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-white/10 transition">
+                <button className="border border-white/40 backdrop-blur-md px-4 md:px-8 py-2 md:py-4 rounded-full font-bold uppercase tracking-wider hover:bg-white/10 transition">
                 Xem thêm thông tin
                 </button>
             </div>

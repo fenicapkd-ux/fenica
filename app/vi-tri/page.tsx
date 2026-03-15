@@ -1,3 +1,5 @@
+import MapboxDirections from "./_components/MapboxDirections";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -8,6 +10,9 @@ export default function Home() {
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             alt={""}
           />
+        </div>
+        <div className="w-full overflow-hidden">
+          <MapboxDirections />
         </div>
         </main>
     </div>

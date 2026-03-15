@@ -4,27 +4,27 @@ const PropertyGrid = () => {
   const propertyList = [
     {
       id: 1,
-      name: "Căn hộ Studio Studio 'Gen Z'",
-      location: "Phân khu The Sunrise, Fenica",
+      name: "Căn hộ 1 phòng ngủ",
+      location: "",
       price: "Liên hệ",
-      image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop",
+      image: "/images/mat-bang-can-ho-1-phong-ngu-fenica.webp",
       specs: { beds: 1, baths: 1, area: "35m²" }
     },
     {
       id: 2,
-      name: "Căn hộ Creative Loft",
-      location: "Phân khu Sky Garden, Fenica",
+      name: "Căn hộ 1 phòng ngủ +1",
+      location: "",
       price: "Liên hệ",
-      image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop",
+      image: "/images/mat-bang-can-ho-1-1-phong-ngu-fenica.webp",
       specs: { beds: 2, baths: 1, area: "55m²" },
       featured: true
     },
     {
       id: 3,
-      name: "Căn hộ Dual Key năng động",
-      location: "Phân khu Central Park, Fenica",
+      name: "Căn hộ 2 phòng ngủ",
+      location: "",
       price: "Liên hệ",
-      image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=2070&auto=format&fit=crop",
+      image: "/images/mat-bang-can-ho-2-phong-ngu-fenica.webp",
       specs: { beds: 2, baths: 2, area: "75m²" }
     }
   ];

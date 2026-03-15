@@ -21,11 +21,11 @@ export default function LuxuryNavbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 lg:px-16 backdrop-blur-xl text-white">
+      <nav className=" text-[#c98266e6] fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 lg:px-16 backdrop-blur-xl">
 
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-md">
-            <div className="w-4 h-4 border-2 border-white rotate-45" />
+          <div className="w-8 h-8 flex items-center justify-center">
+            <img src="/favicon.png" className='w-full object-cover' alt="" />
           </div>
           <span className="text-xl font-semibold tracking-tight">
             Fenica

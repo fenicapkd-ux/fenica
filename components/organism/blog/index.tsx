@@ -10,21 +10,21 @@ const Blog = () => {
         title: "Mẹo tối ưu không gian cho căn hộ nhỏ",
         date: "17 Tháng 2, 2026",
         category: "Mẹo hay",
-        image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2117&auto=format&fit=crop"
+        image: "/images/finica-goc-nhin-thu-ba.webp"
       },
       {
         id: 2,
         title: "Tăng giá trị căn hộ nhờ công nghệ Smart-home",
         date: "18 Tháng 2, 2026",
         category: "Hướng dẫn",
-        image: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=2070&auto=format&fit=crop"
+        image: "/images/sanh-fenica.webp"
       },
       {
         id: 3,
         title: "Cập nhật lãi suất vay mua nhà năm 2026",
         date: "19 Tháng 2, 2026",
         category: "Thị trường",
-        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop"
+        image: "/images/thiet-ke-can-ho-fenica-1.webp"
       }
     ]
   };

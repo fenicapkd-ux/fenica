@@ -2,8 +2,7 @@
 
 import * as React from "react";
 import { motion, AnimatePresence, PanInfo } from "framer-motion";
-import { ChevronLeft, ChevronRight, ArrowUpRight, PlayCircle } from "lucide-react";
-import Link from "next/link";
+import { ChevronLeft, ChevronRight, PlayCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type FocusRailItem = {
@@ -33,28 +32,6 @@ function wrap(min: number, max: number, v: number) {
   const rangeSize = max - min;
   return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
 }
-
-/**
- * Physics Configuration
- * Base spring for spatial movement (x/z)
- */
-const BASE_SPRING = {
-  type: "spring",
-  stiffness: 300,
-  damping: 30,
-  mass: 1,
-};
-
-/**
- * Scale Spring
- * Bouncier spring specifically for the visual "Click/Tap" feedback on the center card
- */
-const TAP_SPRING = {
-  type: "spring",
-  stiffness: 450,
-  damping: 18, // Lower damping = subtle overshoot/wobble "tap"
-  mass: 1,
-};
 
 export function FocusRail({
   items,

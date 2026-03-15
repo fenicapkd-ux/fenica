@@ -18,15 +18,15 @@ const Footer = () => {
         title: "Khám phá",
         items: [
           { name: "Trang chủ", href: "/" },
-          { name: "Danh mục", href: "#" },
+          { name: "Tổng quan", href: "/tong-quang" },
+          { name: "Vị trí", href: "/vi-tri" },
           { name: "Sản phẩm", href: "/san-pham" },
-          { name: "Căn hộ tiêu biểu", href: "#" }
+          { name: "Thư viện", href: "/thu-vien" }
         ]
       },
       {
         title: "Hỗ trợ",
         items: [
-          { name: "Đánh giá khách hàng", href: "#" },
           { name: "Tin tức dự án", href: "/tin-tuc" },
           { name: "Hỏi đáp (FAQs)", href: "/cau-hoi" },
           { name: "Trang lỗi 404", href: "/404" }

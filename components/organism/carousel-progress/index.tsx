@@ -35,7 +35,7 @@ export default function CarouselWithProgress({images}: CarouselWithProgressProp)
   }, [api]);
 
   return (
-    <div className="mx-auto max-w-6xl py-4">
+    <div className="mx-auto max-w-7xl">
       <Carousel className="w-full" setApi={setApi}>
         <CarouselContent>
           {images.map((image) => (

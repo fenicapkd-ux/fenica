@@ -58,7 +58,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <Link href="/mat-bang/cann-ho">
+        <Link href="/mat-bang/can-ho">
         <button className="bg-[#111827] text-white px-8 py-4 rounded-2xl font-bold text-sm hover:bg-[#c98266e6] transition-all whitespace-nowrap shadow-lg active:scale-95">
           Xem thêm
         </button>

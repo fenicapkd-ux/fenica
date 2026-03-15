@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import Script from 'next/script';
 import Hero from '@/components/organism/hero';
 import Properties from '@/components/organism/properties';
@@ -11,62 +10,22 @@ import PropertyGrid from '@/components/organism/property-grid';
 import SectionHeader from '@/components/molecules/section-header';
 import { fenicaOverview } from '@/mock-data/overview.data';
 import ProjectOverview from '@/components/organism/project-overview';
+import CarouselWithProgress from '@/components/organism/carousel-progress';
+import Link from 'next/link';
 
-export const metadata: Metadata = {
-  verification: {
-    google: "A_wADTxtjGs5_7CTpKnD7fwi7KRyvAxLjnvB4p4EcAI"
-  },
-  title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời Bền Vững',
-  description:
-    'Căn hộ fenica sở hữu vị trí chiến lược, thiết kế tinh tế, tiện ích đẳng cấp, lựa chọn lý tưởng để an cư lâu dài và đầu tư sinh lời bền vững tại thị trường bất động sản đầy tiềm năng.',
+const PLANE = [
+  "/images/fenica-mat-bang-tang-1.jpg",
+  "/images/fenica-mat-bang-tang-2.jpg",
+  "/images/fenica-mat-bang-tang-3-21.jpg",
+  "/images/fenica-mat-bang-tang-22.jpg",
+]
 
-  keywords: [
-    'fenica',
-    'căn hộ fenica',
-    'dự án fenica',
-    'căn hộ cao cấp fenica',
-    'mua căn hộ fenica',
-    'đầu tư căn hộ fenica',
-    'bất động sản fenica',
-    'căn hộ sang trọng',
-    'dự án căn hộ đầu tư'
-  ],
+const DESIGN_ROOM = [
+  "/images/thiet-ke-can-ho-fenica.png",
+  "/images/thiet-ke-can-ho-fenica-1.png",
+  "/images/thiet-ke-can-ho-fenica-2.png"
+]
 
-  openGraph: {
-    title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời',
-    description:
-      'fenica mang đến không gian sống hiện đại, vị trí chiến lược, tiềm năng tăng giá bền vững cho nhà đầu tư.',
-    url: 'https://fenica.xyz',
-    siteName: 'fenica',
-    images: [
-      {
-        url: 'https://fenica.xyz/images/fenica-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Căn hộ fenica'
-      }
-    ],
-    locale: 'vi_VN',
-    type: 'website'
-  },
-
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng',
-    description:
-      'Không gian sống đẳng cấp – cơ hội đầu tư sinh lời dài hạn.',
-    images: ['https://fenica.xyz/images/fenica-og.jpg']
-  },
-
-  alternates: {
-    canonical: 'https://fenica.xyz/'
-  },
-
-  robots: {
-    index: true,
-    follow: true
-  }
-}
 
 export default function Home() {
   return (
@@ -81,6 +40,28 @@ export default function Home() {
             alt={""}
           />
         </div>
+        <div className="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+          <div className="space-y-4 max-w-2xl">
+            <div className="flex items-center gap-2 text-[#c98266e6] font-bold">
+              <div className="w-2 h-4 bg-[#c98266e6] rounded-sm" />
+              <span className="text-xs uppercase tracking-widest">Tầng điển hình</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+              Mặt bằng tầng điển hình
+            </h2>
+            <p className="text-slate-500 text-lg leading-relaxed">
+              Cập nhật
+            </p>
+          </div>
+
+          <Link href="/mat-bang">
+            <button className="bg-[#111827] text-white px-8 py-4 rounded-2xl font-bold text-sm hover:bg-[#c98266e6] transition-all whitespace-nowrap shadow-lg active:scale-95">
+              Xem thêm
+            </button>
+          </Link>
+        </div>
+        <CarouselWithProgress images={PLANE} />
+        <CarouselWithProgress images={DESIGN_ROOM} />
         <Properties />
         <Testimonials />
         <Featured />

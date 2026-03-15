@@ -3,16 +3,22 @@ import Link from 'next/link';
 export default function ToolPage() {
   const tools = [
     {
+      title: 'Tìm đường đến dự án Fenica',
+      desc: 'Chỉ đường trực tiếp đến dự án bằng bản đồ',
+      href: '/cong-cu/tim-duong',
+      icon: '📍',
+    },
+    {
       title: 'Tính lãi vay',
       desc: 'Công cụ tính lãi suất vay mua căn hộ nhanh chóng',
       href: '/cong-cu/tinh-tien-lai',
       icon: '💰',
     },
     {
-      title: 'Tìm đường đến dự án Fenica',
-      desc: 'Chỉ đường trực tiếp đến dự án bằng bản đồ',
-      href: '/cong-cu/tim-duong',
-      icon: '📍',
+      title: 'Chuyển tiền',
+      desc: 'Công cụ chuyển đổi tiền tệ nhanh chóng',
+      href: '/cong-cu/chuyen-tien',
+      icon: '💰',
     },
   ];
 

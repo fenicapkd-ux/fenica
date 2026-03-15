@@ -6,7 +6,7 @@ import Footer from "@/components/layout/footer";
 import ContactFixed from "@/components/molecules/contact-fixed";
 import LuxuryNavbar from "@/components/layout/luxury-navbar";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,19 +17,23 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+<meta name="msvalidate.01" content="EE0EEBD5CFA877BEE3F858484B110AB0" />
 export const metadata: Metadata = {
   verification: {
-    google: "A_wADTxtjGs5_7CTpKnD7fwi7KRyvAxLjnvB4p4EcAI"
+    google: "A_wADTxtjGs5_7CTpKnD7fwi7KRyvAxLjnvB4p4EcAI",
+    other: {
+      'msvalidate.01': 'EE0EEBD5CFA877BEE3F858484B110AB0',
+      'yandex-verification': '4495102f9cb91013',
+    },
   },
   title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời Bền Vững',
   description:
     'Căn hộ fenica sở hữu vị trí chiến lược, thiết kế tinh tế, tiện ích đẳng cấp, lựa chọn lý tưởng để an cư lâu dài và đầu tư sinh lời bền vững tại thị trường bất động sản đầy tiềm năng.',
-icons: {
-  icon: '/favicon.png',
-  shortcut: '/favicon.png',
-  apple: '/favicon.png',
-},
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   keywords: [
     'fenica',
     'căn hộ fenica',
@@ -91,7 +95,7 @@ export default function RootLayout({
         <LuxuryNavbar />
         {children}
         <ContactFixed />
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

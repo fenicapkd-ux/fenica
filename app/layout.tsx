@@ -21,9 +21,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   verification: {
     google: "A_wADTxtjGs5_7CTpKnD7fwi7KRyvAxLjnvB4p4EcAI",
+    yandex: "4495102f9cb91013",
     other: {
       'msvalidate.01': 'EE0EEBD5CFA877BEE3F858484B110AB0',
-      'yandex-verification': '4495102f9cb91013',
     },
   },
   title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời Bền Vững',

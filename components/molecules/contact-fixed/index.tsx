@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Phone, Facebook, ChevronUp } from 'lucide-react';
+import { Phone, ChevronUp, Mail } from 'lucide-react';
 
 const ContactFixed = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,18 +34,18 @@ const ContactFixed = () => {
           <span className="text-[10px] font-medium text-gray-600">Gọi điện</span>
         </a>
         
-        <a href="https://zalo.me/yourphone" className="flex flex-col items-center gap-1">
+        <a href="https://zalo.me/0799036842" className="flex flex-col items-center gap-1">
           <div className="p-2 bg-[#0068ff] text-white rounded-full">
             <span className="font-bold text-sm">Zalo</span>
           </div>
           <span className="text-[10px] font-medium text-gray-600">Zalo</span>
         </a>
 
-        <a href="https://m.me/yourpage" className="flex flex-col items-center gap-1">
+        <a href="/lien-he" className="flex flex-col items-center gap-1">
           <div className="p-2 bg-blue-600 text-white rounded-full">
-            <Facebook size={20} fill="currentColor" />
+            <Mail size={20} />
           </div>
-          <span className="text-[10px] font-medium text-gray-600">Messenger</span>
+          <span className="text-[10px] font-medium text-gray-600">Tin nhắn</span>
         </a>
       </div>
 
@@ -75,13 +75,13 @@ const ContactFixed = () => {
 
         {/* Nút Facebook */}
         <a 
-          href="https://www.facebook.com/profile.php?id=61579571425982&locale=vi_VN" 
+          href="/lien-he" 
           target="_blank"
           className="group relative flex items-center justify-center w-14 h-14 bg-white text-blue-600 rounded-full shadow-xl hover:-translate-y-1 transition-all border border-gray-50"
         >
-          <Facebook size={28} fill="currentColor" />
+          <Mail size={28} />
           <span className="absolute right-16 bg-gray-800 text-white text-xs px-3 py-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-            Gửi tin nhắn Facebook
+            Gửi thông tin liên hệ
           </span>
         </a>
 

@@ -1,3 +1,4 @@
+import ContactForm from '@/components/organism/contact-form';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 const ContactSection = () => {
@@ -50,29 +51,7 @@ const ContactSection = () => {
 
         {/* Form liên hệ bên phải */}
         <div className="lg:w-[60%] md:p-10 lg:p-16">
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-widest pl-2">Họ và tên</label>
-              <input type="text" placeholder="Nguyễn Văn A" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#c98266e6] transition-all outline-none" />
-            </div>
-            <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-widest pl-2">Số điện thoại *</label>
-              <input type="tel" placeholder="090..." className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#c98266e6] transition-all outline-none" />
-            </div>
-            <div className="md:col-span-2 space-y-2">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-widest pl-2">Email của bạn</label>
-              <input type="email" placeholder="example@gmail.com" className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#c98266e6] transition-all outline-none" />
-            </div>
-            <div className="md:col-span-2 space-y-2">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-widest pl-2">Lời nhắn của bạn</label>
-              <textarea rows={4} placeholder="Tôi muốn nhận báo giá căn hộ Creative Loft..." className="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-[#c98266e6] transition-all outline-none resize-none" />
-            </div>
-            <div className="md:col-span-2 pt-4">
-              <button className="w-full bg-[#c98266e6] text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-[#00a690] transition-all shadow-xl shadow-emerald-100 active:scale-[0.98]">
-                Gửi yêu cầu ngay
-              </button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>

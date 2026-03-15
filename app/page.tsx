@@ -14,16 +14,16 @@ import CarouselWithProgress from '@/components/organism/carousel-progress';
 import Link from 'next/link';
 
 const PLANE = [
-  "/images/fenica-mat-bang-tang-1.jpg",
-  "/images/fenica-mat-bang-tang-2.jpg",
-  "/images/fenica-mat-bang-tang-3-21.jpg",
-  "/images/fenica-mat-bang-tang-22.jpg",
+  "/images/fenica-mat-bang-tang-1.webp",
+  "/images/fenica-mat-bang-tang-2.webp",
+  "/images/fenica-mat-bang-tang-3-21.webp",
+  "/images/fenica-mat-bang-tang-22.webp",
 ]
 
 const DESIGN_ROOM = [
-  "/images/thiet-ke-can-ho-fenica.png",
-  "/images/thiet-ke-can-ho-fenica-1.png",
-  "/images/thiet-ke-can-ho-fenica-2.png"
+  "/images/thiet-ke-can-ho-fenica.webp",
+  "/images/thiet-ke-can-ho-fenica-1.webp",
+  "/images/thiet-ke-can-ho-fenica-2.webp"
 ]
 
 
@@ -35,7 +35,7 @@ export default function Home() {
         <ProjectOverview {...fenicaOverview} />
         <div className='w-full'>
           <img
-            src={"/images/ban-do-vi-tri-fenica.png"}
+            src={"/images/ban-do-vi-tri-fenica.webp"}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             alt={""}
           />
@@ -86,7 +86,7 @@ export default function Home() {
             description:
               'Dự án căn hộ fenica sở hữu vị trí chiến lược, thiết kế tinh tế, phù hợp an cư và đầu tư sinh lời.',
             url: 'https://yourdomain.com/fenica',
-            image: 'https://yourdomain.com/images/fenica-og.jpg',
+            image: 'https://yourdomain.com/images/fenica-og.webp',
             address: {
               '@type': 'PostalAddress',
               addressCountry: 'VN'
@@ -129,7 +129,7 @@ export default function Home() {
             description:
               "Dự án căn hộ Fenica với thiết kế hiện đại và tiềm năng tăng giá cao.",
             url: "https://fenica.xyz",
-            image: "https://fenica.xyz/images/fenica-og.jpg",
+            image: "https://fenica.xyz/images/fenica-og.webp",
             offers: {
               "@type": "Offer",
               priceCurrency: "VND",

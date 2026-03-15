@@ -1,9 +1,9 @@
 
 const PLANE_ROOM = [
-  "/images/mat-bang-can-ho-1-can-goc-phong-ngu-fenica.jpg",
-  "/images/mat-bang-can-ho-2-phong-ngu-fenica.jpg",
-  "/images/mat-bang-can-ho-1-1-phong-ngu-fenica.jpg",
-  "/images/mat-bang-can-ho-1-phong-ngu-fenica.jpg",
+  "/images/mat-bang-can-ho-1-can-goc-phong-ngu-fenica.webp",
+  "/images/mat-bang-can-ho-2-phong-ngu-fenica.webp",
+  "/images/mat-bang-can-ho-1-1-phong-ngu-fenica.webp",
+  "/images/mat-bang-can-ho-1-phong-ngu-fenica.webp",
 ]
 
 

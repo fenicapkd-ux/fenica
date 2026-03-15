@@ -6,19 +6,19 @@ const Properties = () => {
       id: 1,
       title: "Căn hộ giới trẻ",
       description: "Trải nghiệm sự sang trọng và tiện nghi với các căn biệt thự độc bản, được thiết kế cho cuộc sống tinh tế.",
-      image: "/images/sanh-fenica.jpg",
+      image: "/images/sanh-fenica.webp",
       size: "large"
     },
     {
       id: 2,
       title: "Căn hộ hiện đại",
-      image: "/images/nha-tre-fenica.jpg",
+      image: "/images/nha-tre-fenica.webp",
       size: "small"
     },
     {
       id: 3,
       title: "Văn phòng hạng A",
-      image: "/images/ho-boi-fenica.jpg",
+      image: "/images/ho-boi-fenica.webp",
       size: "small"
     }
   ];
@@ -49,7 +49,7 @@ const Properties = () => {
         {/* Ảnh lớn bên phải */}
         <div className="rounded-[2rem] overflow-hidden shadow-2xl group cursor-pointer">
           <img 
-            src="/images/sanh-fenica.jpg" 
+            src="/images/sanh-fenica.webp" 
             alt="Dự án tiêu biểu fenica" 
             className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
           />

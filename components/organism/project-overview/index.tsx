@@ -64,7 +64,7 @@ export default function ProjectOverview({
                     <div>
                         <div className="rounded-2xl overflow-hidden">
                             <img
-                                src="/images/goc-nhin-hoan-hon-fenica.jpg"
+                                src="/images/goc-nhin-hoan-hon-fenica.webp"
                                 alt="Fenica Interior"
                                 className="w-full h-full object-cover"
                             />

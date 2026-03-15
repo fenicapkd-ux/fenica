@@ -1,8 +1,8 @@
 const PLANE = [
-  "/images/fenica-mat-bang-tang-1.jpg",
-  "/images/fenica-mat-bang-tang-2.jpg",
-  "/images/fenica-mat-bang-tang-3-21.jpg",
-  "/images/fenica-mat-bang-tang-22.jpg",
+  "/images/fenica-mat-bang-tang-1.webp",
+  "/images/fenica-mat-bang-tang-2.webp",
+  "/images/fenica-mat-bang-tang-3-21.webp",
+  "/images/fenica-mat-bang-tang-22.webp",
 ]
 
 

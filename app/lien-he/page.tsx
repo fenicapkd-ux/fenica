@@ -19,7 +19,7 @@ const ContactSection = () => {
         {/* Thông tin liên hệ bên trái */}
         <div className="lg:w-[40%] bg-[#111827] rounded-[2.5rem] p-10 text-white relative overflow-hidden flex flex-col justify-between min-h-[450px]">
           <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
-            <img src="/images/goc-nhin-du-an-fenica.jpg" className="w-full h-full object-cover" alt="background" />
+            <img src="/images/goc-nhin-du-an-fenica.webp" className="w-full h-full object-cover" alt="background" />
           </div>
           
           <div className="relative z-10 space-y-8">

@@ -4,7 +4,7 @@ export default function Home() {
       <main className='w-full'>
         <div className='w-full'>
           <img
-            src={"/images/ban-do-vi-tri-fenica.png"}
+            src={"/images/ban-do-vi-tri-fenica.webp"}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             alt={""}
           />

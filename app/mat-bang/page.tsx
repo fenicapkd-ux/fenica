@@ -2,17 +2,17 @@ import CarouselWithProgress from "@/components/organism/carousel-progress";
 import Link from "next/link";
 
 const PLANE_ROOM = [
-  "/images/mat-bang-can-ho-1-can-goc-phong-ngu-fenica.jpg",
-  "/images/mat-bang-can-ho-2-phong-ngu-fenica.jpg",
-  "/images/mat-bang-can-ho-1-1-phong-ngu-fenica.jpg",
-  "/images/mat-bang-can-ho-1-phong-ngu-fenica.jpg",
+  "/images/mat-bang-can-ho-1-can-goc-phong-ngu-fenica.webp",
+  "/images/mat-bang-can-ho-2-phong-ngu-fenica.webp",
+  "/images/mat-bang-can-ho-1-1-phong-ngu-fenica.webp",
+  "/images/mat-bang-can-ho-1-phong-ngu-fenica.webp",
 ]
 
 const PLANE = [
-  "/images/fenica-mat-bang-tang-1.jpg",
-  "/images/fenica-mat-bang-tang-2.jpg",
-  "/images/fenica-mat-bang-tang-3-21.jpg",
-  "/images/fenica-mat-bang-tang-22.jpg",
+  "/images/fenica-mat-bang-tang-1.webp",
+  "/images/fenica-mat-bang-tang-2.webp",
+  "/images/fenica-mat-bang-tang-3-21.webp",
+  "/images/fenica-mat-bang-tang-22.webp",
 ]
 
 

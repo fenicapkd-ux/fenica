@@ -10,7 +10,7 @@ const Testimonials = () => {
     client: "Emily & John Smith",
     role: "Người mua nhà lần đầu",
     // Placeholder image URL, should be replaced with an actual image of the family
-    image: "/images/dinh-thap-fenica.jpg"
+    image: "/images/dinh-thap-fenica.webp"
   };
 
   return (

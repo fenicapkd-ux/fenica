@@ -24,7 +24,7 @@
         <div 
             className="absolute inset-0 bg-cover bg-center z-0"
             style={{ 
-            backgroundImage: `linear-gradient(to right, rgba(201, 130, 102, 0.9), transparent), url('/images/goc-nhin-du-an-fenica.jpg')` 
+            backgroundImage: `linear-gradient(to right, rgba(201, 130, 102, 0.9), transparent), url('/images/goc-nhin-du-an-fenica.webp')` 
             }}
         />
 

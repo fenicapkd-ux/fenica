@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'fenica',
     images: [
       {
-        url: 'https://fenica.xyz/dinh-thap-fenica.jpg',
+        url: 'https://fenica.xyz/dinh-thap-fenica.webp',
         width: 1200,
         height: 630,
         alt: 'Căn hộ fenica'
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng',
     description:
       'Không gian sống đẳng cấp – cơ hội đầu tư sinh lời dài hạn.',
-    images: ['https://fenica.xyz/dinh-thap-fenica.jpg']
+    images: ['https://fenica.xyz/dinh-thap-fenica.webp']
   },
 
   alternates: {

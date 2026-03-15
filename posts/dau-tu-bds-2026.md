@@ -4,7 +4,7 @@ description: "Phân tích thị trường bất động sản 2026, xu hướng 
 keywords: ["bất động sản", "đầu tư", "thị trường 2026"]
 author: "Người Đầu Tư"
 date: "2026-03-14"
-image: "/images/bds-2026.jpg"
+image: "/images/bds-2026.webp"
 slug: "dau-tu-bat-dong-san-2026"
 ---
 # Đầu tư bất động sản 2026: Xu hướng và cơ hội

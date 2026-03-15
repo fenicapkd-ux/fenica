@@ -19,31 +19,31 @@ export default function DemoOne() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
             <div className="rounded-xl shadow overflow-hidden">
-                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.jpg" alt="" />
+                <img className="h-auto max-w-full rounded-base" src="/images/sanh-fenica.webp" alt="" />
             </div>
         </div>
 

@@ -46,14 +46,14 @@ const Faq = ({classCss = "grid grid-cols-1 md:grid-cols-2"}: FaqProp) => {
           <div className="w-full md:w-[55%] flex flex-col gap-5">
             <div className="rounded-[2rem] overflow-hidden aspect-[4/3] shadow-xl">
               <img 
-                src="/images/finica-goc-nhin-thu-nhat.png" 
+                src="/images/finica-goc-nhin-thu-nhat.webp" 
                 alt="Ngoại thất Fenica" 
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
             <div className="rounded-[2rem] overflow-hidden aspect-square shadow-xl bg-slate-50 relative p-6 flex flex-col justify-end">
               <img 
-                src="/images/finica-goc-nhin-thu-hai.png" 
+                src="/images/finica-goc-nhin-thu-hai.webp" 
                 alt="Chi tiết nội thất Fenica" 
                 className="absolute inset-0 w-full h-full object-cover opacity-90 transition-transform duration-500 hover:scale-105"
               />
@@ -64,7 +64,7 @@ const Faq = ({classCss = "grid grid-cols-1 md:grid-cols-2"}: FaqProp) => {
           </div>
           <div className="w-full md:w-[45%] rounded-[2rem] overflow-hidden aspect-[2/3] md:h-auto shadow-2xl relative">
             <img 
-              src="/images/finica-goc-nhin-thu-ba.png" 
+              src="/images/finica-goc-nhin-thu-ba.webp" 
               alt="Co-working space tại Fenica" 
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />

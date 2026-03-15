@@ -36,7 +36,7 @@ const Featured = () => {
         <div className="w-full lg:w-1/2 relative group">
           <div className="rounded-[2.5rem] overflow-hidden aspect-[4/3] relative shadow-2xl">
             <img 
-              src="/images/goc-nhin-hoan-hon-fenica.jpg" 
+              src="/images/goc-nhin-hoan-hon-fenica.webp" 
               alt="Fenica Interior" 
               className="w-full h-full object-cover"
             />

@@ -20,7 +20,7 @@ const Cta = () => {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-1000 hover:scale-105"
           style={{ 
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070&auto=format&fit=crop')` 
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/ho-boi-fenica.webp')` 
           }}
         />
 

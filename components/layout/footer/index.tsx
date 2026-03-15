@@ -20,15 +20,20 @@ const Footer = () => {
           { name: "Trang chủ", href: "/" },
           { name: "Tổng quan", href: "/tong-quang" },
           { name: "Vị trí", href: "/vi-tri" },
+          { name: "Mặt bằng", href: "/mat-bang" },
           { name: "Sản phẩm", href: "/san-pham" },
-          { name: "Thư viện", href: "/thu-vien" }
+          { name: "Tiện ích", href: "/tien-ich" },
+          { name: "Thư viện", href: "/thu-vien" },
+          { name: "Liên hệ", href: "/lien-he" }
         ]
       },
       {
         title: "Hỗ trợ",
         items: [
+          { name: "Tài liệu", href: "/tai-lieu" },
           { name: "Tin tức dự án", href: "/tin-tuc" },
           { name: "Hỏi đáp (FAQs)", href: "/cau-hoi" },
+          { name: "Công cụ miễn phi", href: "/cong-cu" },
           { name: "Trang lỗi 404", href: "/404" }
         ]
       }

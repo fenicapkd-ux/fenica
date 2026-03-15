@@ -1,4 +1,4 @@
-import MapboxDirections from "./_components/MapboxDirections";
+import MapboxDirections from "../cong-cu/_components/MapboxDirections";
 
 export default function Home() {
   return (

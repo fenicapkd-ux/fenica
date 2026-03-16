@@ -55,6 +55,7 @@ const DEMO_ITEMS: FocusRailItem[] = [
 
 export default function VideoPopup() {
     const [open, setOpen] = useState(false);
+    const [idx, setIdx] = useState(0);
 
     return (
         <div className="w-full">
@@ -62,7 +63,10 @@ export default function VideoPopup() {
                 items={DEMO_ITEMS}
                 autoPlay={false}
                 loop={true}
-                onEvent={() => setOpen(true)}
+                onEvent={(index) => {
+                    setOpen(true);
+                    setIdx(index);
+                }}
             />
             <Dialog open={open} onOpenChange={setOpen}>
                 <AnimatePresence>
@@ -85,7 +89,7 @@ export default function VideoPopup() {
                                 <div className="aspect-video h-[80vh] w-full">
                                     <iframe
                                         className="w-full h-full"
-                                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                                        src={DEMO_ITEMS[idx].src ?? ''}
                                         title="Video"
                                         allow="autoplay; encrypted-media"
                                         allowFullScreen

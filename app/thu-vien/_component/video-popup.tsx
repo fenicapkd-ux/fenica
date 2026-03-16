@@ -90,7 +90,7 @@ export default function VideoPopup() {
                                     <iframe
                                         className="w-full h-full"
                                         src={DEMO_ITEMS[idx].src ?? ''}
-                                        title="Video"
+                                        title={DEMO_ITEMS[idx].description ?? ''}
                                         allow="autoplay; encrypted-media"
                                         allowFullScreen
                                     />

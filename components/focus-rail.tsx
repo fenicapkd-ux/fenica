@@ -210,7 +210,7 @@ export function FocusRail({
 
                 <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 z-10 h-14 w-14">
                   <button
-                    onClick={() => onEvent && onEvent(idx)}
+                    onClick={() => onEvent && onEvent(absIndex)}
                     className="rounded-full text-neutral-400 transition hover:bg-white/10 hover:text-white ease-linear"
                     aria-label="Next"
                   >

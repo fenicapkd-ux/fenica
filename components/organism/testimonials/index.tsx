@@ -32,10 +32,10 @@ const Testimonials = () => {
         <div className="flex justify-between items-start mb-16">
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-white font-bold">
-              <div className="w-2 h-4 bg-[#c98266] rounded-sm" />
+              <div className="w-2 h-4 bg-[#fff] rounded-sm" />
               <span className="text-xs uppercase tracking-widest">{testimonialData.tag}</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
+            <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">
               {testimonialData.title}
             </h2>
           </div>
@@ -66,7 +66,7 @@ const Testimonials = () => {
             
             <div className="pl-[4rem] space-y-1">
               <p className="font-bold text-lg text-white">{testimonialData.client}</p>
-              <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">{testimonialData.role}</p>
+              {/* <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">{testimonialData.role}</p> */}
             </div>
           </div>
 

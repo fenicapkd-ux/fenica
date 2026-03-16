@@ -23,7 +23,7 @@ export default function AboutPage() {
       <div className="pt-20">
 
       </div>
-      <div className="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+      <div className="px-4 md:px-0 mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
         <div className="space-y-4 max-w-2xl">
           <div className="flex items-center gap-2 text-[#c98266e6] font-bold">
             <div className="w-2 h-4 bg-[#c98266e6] rounded-sm" />

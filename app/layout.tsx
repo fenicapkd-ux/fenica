@@ -7,6 +7,7 @@ import ContactFixed from "@/components/molecules/contact-fixed";
 import LuxuryNavbar from "@/components/layout/luxury-navbar";
 import ContactSection from "@/components/layout/contact";
 import { Toaster } from '@/components/ui/sonner';
+import TaskbarMusic from "@/components/layout/taskbar-music";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -99,6 +100,7 @@ export default function RootLayout({
         <ContactFixed />
         <ContactSection />
         <Footer />
+        <TaskbarMusic />
         <Toaster />
       </body>
     </html>

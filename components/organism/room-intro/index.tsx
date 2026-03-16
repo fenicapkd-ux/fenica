@@ -31,7 +31,7 @@ const RoomIntro = () => {
       {/* Header Info */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
         <div className="space-y-2">
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">
             {roomData.title}
           </h2>
         </div>

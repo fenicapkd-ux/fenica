@@ -33,7 +33,7 @@ const Properties = () => {
             <span className="text-xs uppercase tracking-[0.2em]">Danh mục tiện ích</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
             Khám phá không gian tinh hoa giới trẻ <span className="text-[#c98266e6]">Fenica.</span>
           </h2>
           

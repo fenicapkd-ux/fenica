@@ -7,7 +7,7 @@ const Testimonials = () => {
     tag: "Đánh giá",
     title: "Khách hàng nói gì về Fenica",
     quote: "Mình đã tìm được căn hộ mơ ước chỉ trong nháy mắt! Các thông tin niêm yết rất chi tiết, hình ảnh chính xác, và toàn bộ quy trình mua nhà diễn ra vô cùng suôn sẻ. Dịch vụ chăm sóc khách hàng đỉnh cao, giải đáp mọi thắc mắc của mình. Chắc chắn mình sẽ lại sử dụng nền tảng này trong tương lai!",
-    client: "Emily & John Smith",
+    client: "Chị Trang",
     role: "Người mua nhà lần đầu",
     // Placeholder image URL, should be replaced with an actual image of the family
     image: "/images/dinh-thap-fenica.webp"
@@ -52,9 +52,9 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonial Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-center">
           {/* Quote and Client Info - Left side */}
-          <div className="md:col-span-7 space-y-12">
+          <div className="md:col-span-7 space-y-6">
             <div className="flex flex-col md:flex-row gap-6 items-start">
               <div className="text-[#c98266] p-3 rounded-2xl bg-[#0f172a] mt-1 shadow-inner">
                 <Home size={28} />
@@ -64,7 +64,7 @@ const Testimonials = () => {
               </blockquote>
             </div>
             
-            <div className="pl-[4rem] space-y-1">
+            <div className="md:pl-[4rem] space-y-1">
               <p className="font-bold text-lg text-white">{testimonialData.client}</p>
               {/* <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">{testimonialData.role}</p> */}
             </div>

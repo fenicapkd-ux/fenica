@@ -1,5 +1,24 @@
 import Link from "next/link"
 import { getAllPosts } from "@/lib/posts"
+import { generateSEO } from "@/lib/seo";
+
+export const metadata = generateSEO({
+  title: "Tin tức dự án Fenica | Cập nhật tiến độ, chính sách và thị trường mới nhất",
+  description:
+    "Tin tức mới nhất về dự án Fenica: cập nhật tiến độ xây dựng, chính sách bán hàng, pháp lý, hạ tầng khu vực và thông tin thị trường căn hộ Dĩ An Bình Dương.",
+  path: "/tin-tuc",
+  image: "/images/ho-boi-fenica.webp",
+  keywords: [
+    "tin tức fenica",
+    "dự án fenica mới nhất",
+    "tiến độ fenica",
+    "chính sách fenica",
+    "pháp lý fenica",
+    "tin tức căn hộ dĩ an",
+    "thị trường bất động sản bình dương",
+    "fenica bình dương"
+  ]
+});
 
 export default function BlogPage() {
   const posts = getAllPosts()

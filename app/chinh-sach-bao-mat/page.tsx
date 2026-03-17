@@ -1,10 +1,22 @@
-import type { Metadata } from 'next'
+import { generateSEO } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Chính sách bảo mật | Fenica',
+export const metadata = generateSEO({
+  title: "Chính sách bảo mật Fenica | Bảo vệ thông tin khách hàng và dữ liệu cá nhân",
   description:
-    'Chính sách bảo mật thông tin khách hàng trên website Fenica, cam kết bảo vệ dữ liệu và quyền riêng tư khi đăng ký tư vấn dự án.',
-}
+    "Chính sách bảo mật Fenica cam kết bảo vệ thông tin cá nhân, dữ liệu khách hàng, quy định thu thập, lưu trữ và sử dụng thông tin khi truy cập website dự án.",
+  path: "/chinh-sach-bao-mat",
+  image: "/images/ho-boi-fenica.webp",
+  keywords: [
+    "chính sách bảo mật fenica",
+    "bảo mật thông tin fenica",
+    "dữ liệu khách hàng fenica",
+    "privacy policy fenica",
+    "quyền riêng tư fenica",
+    "thông tin cá nhân fenica",
+    "website fenica bảo mật",
+    "fenica privacy"
+  ]
+});
 
 const privacyPolicies = [
   {

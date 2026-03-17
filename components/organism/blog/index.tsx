@@ -10,7 +10,7 @@ const Blog = () => {
         title: "Mẹo tối ưu không gian cho căn hộ nhỏ",
         date: "17 Tháng 2, 2026",
         category: "Mẹo hay",
-        image: "/images/finica-goc-nhin-thu-ba.webp"
+        image: "/images/fenica-goc-nhin-thu-ba.webp"
       },
       {
         id: 2,

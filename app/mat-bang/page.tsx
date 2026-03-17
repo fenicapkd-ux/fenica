@@ -1,5 +1,24 @@
 import CarouselWithProgress from "@/components/organism/carousel-progress";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
+
+export const metadata = generateSEO({
+  title: "Mặt bằng dự án Fenica | Layout căn hộ 1PN, 2PN tối ưu công năng",
+  description:
+    "Cập nhật mặt bằng dự án Fenica với layout căn hộ 1 phòng ngủ, 2 phòng ngủ, bố trí khoa học, tối ưu diện tích sử dụng và phù hợp nhu cầu an cư tại Dĩ An Bình Dương.",
+  path: "/mat-bang",
+  image: "/images/fenica-mat-bang-tang-2.webp",
+  keywords: [
+    "mặt bằng fenica",
+    "layout fenica",
+    "mặt bằng căn hộ fenica",
+    "layout căn hộ 1pn fenica",
+    "layout căn hộ 2pn fenica",
+    "thiết kế mặt bằng fenica",
+    "mặt bằng dự án fenica",
+    "căn hộ fenica bình dương"
+  ]
+});
 
 const PLANE_ROOM = [
   "/images/mat-bang-can-ho-1-can-goc-phong-ngu-fenica.webp",
@@ -19,7 +38,7 @@ const PLANE = [
 
 export default function AboutPage() {
   return (
-    <main>
+    <>
       <div className="pt-20">
 
       </div>
@@ -38,9 +57,9 @@ export default function AboutPage() {
         </div>
 
         <Link href="/mat-bang/tang-dien-hinh">
-        <button className="bg-[#111827] text-white px-8 py-4 rounded-2xl font-bold text-sm hover:bg-[#c98266e6] transition-all whitespace-nowrap shadow-lg active:scale-95">
-          Xem thêm
-        </button>
+          <button className="bg-[#111827] text-white px-8 py-4 rounded-2xl font-bold text-sm hover:bg-[#c98266e6] transition-all whitespace-nowrap shadow-lg active:scale-95">
+            Xem thêm
+          </button>
         </Link>
       </div>
       <CarouselWithProgress images={PLANE} />
@@ -59,12 +78,12 @@ export default function AboutPage() {
         </div>
 
         <Link href="/mat-bang/can-ho">
-        <button className="bg-[#111827] text-white px-8 py-4 rounded-2xl font-bold text-sm hover:bg-[#c98266e6] transition-all whitespace-nowrap shadow-lg active:scale-95">
-          Xem thêm
-        </button>
+          <button className="bg-[#111827] text-white px-8 py-4 rounded-2xl font-bold text-sm hover:bg-[#c98266e6] transition-all whitespace-nowrap shadow-lg active:scale-95">
+            Xem thêm
+          </button>
         </Link>
       </div>
       <CarouselWithProgress images={PLANE_ROOM} />
-    </main>
+    </>
   )
 }

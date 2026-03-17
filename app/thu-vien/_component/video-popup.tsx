@@ -38,7 +38,7 @@ const DEMO_ITEMS: FocusRailItem[] = [
         title: "FENICA",
         description: "LƯU TRỌN KHOẢNH KHẮC ĐÁNG NHỚ TẠI LỄ KHỞI CÔNG DỰ ÁN FENICA",
         meta: "Tech • AI",
-        imageSrc: "/images/finica-goc-nhin-thu-ba.webp",
+        imageSrc: "/images/fenica-goc-nhin-thu-ba.webp",
         src: "https://www.youtube.com/embed/DCUf5m2EcHM?si=6HsH0fqm_yihjis-?autoplay=1",
         href: "#",
     },

@@ -1,4 +1,13 @@
+import { generateSEO } from "@/lib/seo";
 import MapboxDirections from "../cong-cu/_components/MapboxDirections";
+
+export const metadata = generateSEO({
+  title: "Vị trí dự án Fenica",
+  description: "Vị trí chiến lược của dự án Fenica, kết nối trung tâm và tiện ích xung quanh.",
+  path: "/vi-tri",
+  image: "/images/ban-do-vi-tri-fenica.webp",
+  keywords: ["vị trí fenica", "fenica ở đâu", "địa chỉ fenica"]
+});
 
 export default function Home() {
   return (

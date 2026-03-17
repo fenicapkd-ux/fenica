@@ -1,10 +1,22 @@
-import type { Metadata } from 'next'
+import { generateSEO } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Điều khoản dịch vụ | Fenica',
+export const metadata = generateSEO({
+  title: "Điều khoản dịch vụ dự án Fenica | Quy định sử dụng và chính sách thông tin",
   description:
-    'Điều khoản sử dụng website Fenica, quy định về quyền và trách nhiệm khi truy cập thông tin dự án bất động sản Fenica.',
-}
+    "Điều khoản dịch vụ dự án Fenica quy định về sử dụng website, tiếp nhận thông tin, chính sách tư vấn, quyền và trách nhiệm của người dùng khi truy cập hệ thống.",
+  path: "/dieu-khoan-dich-vu",
+  image: "/images/ho-boi-fenica.webp",
+  keywords: [
+    "điều khoản dịch vụ fenica",
+    "quy định sử dụng fenica",
+    "chính sách website fenica",
+    "điều khoản dự án fenica",
+    "dịch vụ tư vấn fenica",
+    "quyền người dùng fenica",
+    "fenica policy",
+    "điều khoản website fenica"
+  ]
+});
 
 const terms = [
   {

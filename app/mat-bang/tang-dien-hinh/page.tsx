@@ -9,7 +9,7 @@ const PLANE = [
 
 export default function AboutPage() {
   return (
-    <main>
+    <>
       <div className="pt-20">
 
       </div>
@@ -27,15 +27,15 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-    <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8">
         {
-            PLANE.map((esc, idx) => (
-                <div  key={idx} className="rounded-xl overflow-hidden shadow ">
-                    <img src={esc} alt="" className="w-full h-full object-cover" />
-                </div>
-            ))
+          PLANE.map((esc, idx) => (
+            <div key={idx} className="rounded-xl overflow-hidden shadow ">
+              <img src={esc} alt="" className="w-full h-full object-cover" />
+            </div>
+          ))
         }
-    </div>
-    </main>
+      </div>
+    </>
   )
 }

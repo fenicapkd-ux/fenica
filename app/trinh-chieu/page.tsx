@@ -1,28 +1,16 @@
-"use client";
+import { generateSEO } from "@/lib/seo";
+import EmbedFrame from "./_components/embed-frame";
+
+export const metadata = generateSEO({
+  title: "Trình chiếu hình ảnh dự án Fenica",
+  description: "Danh sách hình ảnh dự án Fenica.",
+  path: "/san-pham",
+  image: "/images/ho-boi-fenica.webp",
+  keywords: ["hỉnh ảnh fenica", "fenica hỉnh ảnh ", "cảnh quan fenica"]
+});
 
 export default function AboutPage() {
   return (
-    <main>
-      <iframe
-        src="https://presentation.fenica.xyz"
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0,
-          width: "100%",
-          height: "100%",
-          border: "none",
-          margin: 0,
-          padding: 0,
-          overflow: "hidden",
-          zIndex: 999999
-        }}
-      >
-        Your browser doesnt support iframes
-      </iframe>
-
-    </main>
+    <EmbedFrame />
   )
 }

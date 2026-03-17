@@ -21,7 +21,7 @@ export default function LuxuryNavbar() {
 
   return (
     <>
-      <nav className=" text-[#c98266e6] fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 lg:px-16 backdrop-blur-xl">
+      <nav className=" text-[#c98266e6] fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 lg:px-16 backdrop-blur-xl w-screen">
 
         <Link href="/" className="flex items-center gap-2">
           <div className="w-8 h-8 flex items-center justify-center">

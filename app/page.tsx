@@ -29,8 +29,8 @@ const DESIGN_ROOM = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
-      <div>
+    <div className="min-h-screen font-sans dark:bg-black">
+      <div className='w-full'>
         <Hero />
         <ProjectOverview {...fenicaOverview} />
         <div className='w-full'>

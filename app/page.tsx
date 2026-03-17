@@ -30,6 +30,7 @@ const DESIGN_ROOM = [
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
+      <div>
         <Hero />
         <ProjectOverview {...fenicaOverview} />
         <div className='w-full'>
@@ -73,6 +74,7 @@ export default function Home() {
         <Blog />
         <Cta />
         <Faq />
+      </div>
     </div>
   );
 }

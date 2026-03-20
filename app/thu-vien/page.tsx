@@ -1,9 +1,24 @@
 import Link from "next/link";
 import VideoPopup from "./_component/video-popup";
+import { generateSEO } from "@/lib/seo";
 
-
-
-
+export const metadata = generateSEO({
+  title: "Thư viện dự án Fenica | Hình ảnh phối cảnh, tiện ích và không gian căn hộ",
+  description:
+    "Thư viện hình ảnh dự án Fenica cập nhật phối cảnh tổng thể, tiện ích nội khu, thiết kế căn hộ, cảnh quan sống và hình ảnh thực tế mới nhất tại Dĩ An Bình Dương.",
+  path: "/thu-vien",
+  image: "/images/fenica-goc-nhin-thu-ba.webp",
+  keywords: [
+    "thư viện fenica",
+    "hình ảnh fenica",
+    "phối cảnh fenica",
+    "ảnh dự án fenica",
+    "căn hộ fenica bình dương",
+    "thiết kế fenica",
+    "hình thực tế fenica",
+    "gallery fenica"
+  ]
+});
 
 export default function DemoOne() {
     return (<main className="min-h-screen overflow-x-hidden w-full flex flex-col items-center justify-center py-20">

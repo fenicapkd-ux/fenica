@@ -10,7 +10,7 @@ const Blog = () => {
         title: "Mẹo tối ưu không gian cho căn hộ nhỏ",
         date: "17 Tháng 2, 2026",
         category: "Mẹo hay",
-        image: "/images/finica-goc-nhin-thu-ba.webp"
+        image: "/images/fenica-goc-nhin-thu-ba.webp"
       },
       {
         id: 2,
@@ -38,7 +38,7 @@ const Blog = () => {
             <div className="w-2 h-4 bg-[#c98266e6] rounded-sm" />
             <span className="text-xs uppercase tracking-widest">{blogData.tag}</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">
             {blogData.title}
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">

@@ -29,8 +29,8 @@ const DESIGN_ROOM = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className='w-full'>
+    <div className="min-h-screen font-sans dark:bg-black">
+      <div className='w-full'>
         <Hero />
         <ProjectOverview {...fenicaOverview} />
         <div className='w-full'>
@@ -40,13 +40,13 @@ export default function Home() {
             alt={""}
           />
         </div>
-        <div className="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+        <div className="px-4 md:px-0 mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
           <div className="space-y-4 max-w-2xl">
             <div className="flex items-center gap-2 text-[#c98266e6] font-bold">
               <div className="w-2 h-4 bg-[#c98266e6] rounded-sm" />
               <span className="text-xs uppercase tracking-widest">Tầng điển hình</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">
               Mặt bằng tầng điển hình
             </h2>
             <p className="text-slate-500 text-lg leading-relaxed">
@@ -74,102 +74,7 @@ export default function Home() {
         <Blog />
         <Cta />
         <Faq />
-      </main>
-      <Script
-        id="fenica-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'ApartmentComplex',
-            name: 'fenica',
-            description:
-              'Dự án căn hộ fenica sở hữu vị trí chiến lược, thiết kế tinh tế, phù hợp an cư và đầu tư sinh lời.',
-            url: 'https://yourdomain.com/fenica',
-            image: 'https://yourdomain.com/images/fenica-og.webp',
-            address: {
-              '@type': 'PostalAddress',
-              addressCountry: 'VN'
-            }
-          })
-        }}
-      />
-      <Script
-        id="breadcrumb-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Trang chủ",
-                item: "https://fenica.xyz"
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Dự án Fenica",
-                item: "https://fenica.xyz/#du-an"
-              }
-            ]
-          })
-        }}
-      />
-      <Script
-        id="realestate-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "RealEstateListing",
-            name: "Căn hộ Fenica",
-            description:
-              "Dự án căn hộ Fenica với thiết kế hiện đại và tiềm năng tăng giá cao.",
-            url: "https://fenica.xyz",
-            image: "https://fenica.xyz/images/fenica-og.webp",
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "VND",
-              availability: "https://schema.org/InStock"
-            },
-            address: {
-              "@type": "PostalAddress",
-              addressCountry: "VN"
-            }
-          })
-        }}
-      />
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "Căn hộ Fenica nằm ở đâu?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Fenica tọa lạc tại vị trí chiến lược với kết nối giao thông thuận tiện."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "Có nên đầu tư căn hộ Fenica không?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Fenica có tiềm năng tăng giá tốt nhờ vị trí và hệ thống tiện ích hiện đại."
-                }
-              }
-            ]
-          })
-        }}
-      />
+      </div>
     </div>
   );
 }

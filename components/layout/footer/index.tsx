@@ -1,5 +1,4 @@
-import React from 'react';
-import { Facebook, Instagram, Twitter, Send } from 'lucide-react';
+import { Instagram, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const footerData = {
@@ -23,6 +22,7 @@ const Footer = () => {
           { name: "Mặt bằng", href: "/mat-bang" },
           { name: "Sản phẩm", href: "/san-pham" },
           { name: "Tiện ích", href: "/tien-ich" },
+          { name: "Trình chiếu", href: "/trinh-chieu" },
           { name: "Thư viện", href: "/thu-vien" },
           { name: "Liên hệ", href: "/lien-he" }
         ]
@@ -59,26 +59,10 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="w-full lg:w-auto flex flex-col gap-4">
-            <form className="flex flex-col sm:flex-row gap-3">
-              <input 
-                type="email" 
-                placeholder={footerData.newsletter.placeholder}
-                className="bg-gray-800/50 border border-gray-700 rounded-full px-6 py-3 text-sm focus:outline-none focus:border-[#c98266e6] w-full sm:w-80"
-              />
-              <button className="bg-white text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-[#c98266e6] hover:text-white transition-all">
-                {footerData.newsletter.button}
-              </button>
-            </form>
-            <p className="text-[10px] text-gray-500 max-w-sm">
-              {footerData.newsletter.note}
-            </p>
-          </div>
-
           <div className="flex gap-4">
-            <a href="#" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Twitter size={18} /></a>
-            <a href="#" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Facebook size={18} /></a>
-            <a href="#" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Instagram size={18} /></a>
+            <a href="tel:0799036842" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Phone size={18} /></a>
+            <a href="/lien-he" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Mail size={18} /></a>
+            <a href="https://zalo.me/0799036842" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Instagram size={18} /></a>
           </div>
         </div>
 

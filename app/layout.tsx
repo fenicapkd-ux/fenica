@@ -7,6 +7,10 @@ import ContactFixed from "@/components/molecules/contact-fixed";
 import LuxuryNavbar from "@/components/layout/luxury-navbar";
 import ContactSection from "@/components/layout/contact";
 import { Toaster } from '@/components/ui/sonner';
+import TaskbarMusic from "@/components/layout/taskbar-music";
+import BreadcrumbSchema from "@/components/seo/breadcrumb-schema";
+import { pages } from "@/mock-data/breadcrumb.data";
+import RealEstateSchema from "@/components/seo/real-estate-schema";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -19,7 +23,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-<meta name="msvalidate.01" content="EE0EEBD5CFA877BEE3F858484B110AB0" />
+
 export const metadata: Metadata = {
   verification: {
     google: "A_wADTxtjGs5_7CTpKnD7fwi7KRyvAxLjnvB4p4EcAI",
@@ -95,12 +99,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LuxuryNavbar />
-        {children}
-        <ContactFixed />
-        <ContactSection />
-        <Footer />
-        <Toaster />
+        <main className="bg-zinc-50">
+          {children}
+          <ContactFixed />
+          <ContactSection />
+          <Footer />
+          <TaskbarMusic />
+          <Toaster />
+          <BreadcrumbSchema items={pages} />
+          <RealEstateSchema />
+        </main>
       </body>
-    </html>
+    </html >
   );
 }

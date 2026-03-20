@@ -1,10 +1,8 @@
-// app/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 import { format } from "date-fns";
 import { vi } from "date-fns/locale";
 import { CalendarIcon, ArrowRight } from "lucide-react";
-
 import { WPPost } from "@/types/wordpress";
 import {
   Card,
@@ -15,12 +13,25 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { generateSEO } from "@/lib/seo";
 
-// Tối ưu SEO Meta Data
-export const metadata = {
-  title: "Tin tức Bất Động Sản | Cập nhật dự án mới nhất",
-  description: "Cập nhật thông tin các dự án bất động sản, chung cư, căn hộ tiềm năng với vị trí chiến lược và khả năng sinh lời cao.",
-};
+export const metadata = generateSEO({
+  title: "Tin tức dự án Fenica | Cập nhật tiến độ, chính sách và thị trường mới nhất",
+  description:
+    "Tin tức mới nhất về dự án Fenica: cập nhật tiến độ xây dựng, chính sách bán hàng, pháp lý, hạ tầng khu vực và thông tin thị trường căn hộ Dĩ An Bình Dương.",
+  path: "/tin-tuc",
+  image: "/images/ho-boi-fenica.webp",
+  keywords: [
+    "tin tức fenica",
+    "dự án fenica mới nhất",
+    "tiến độ fenica",
+    "chính sách fenica",
+    "pháp lý fenica",
+    "tin tức căn hộ dĩ an",
+    "thị trường bất động sản bình dương",
+    "fenica bình dương"
+  ]
+});
 
 // Hàm Fetch Data từ WordPress API
 async function getPosts(): Promise<WPPost[]> {

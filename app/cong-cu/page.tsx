@@ -1,4 +1,23 @@
+import { generateSEO } from '@/lib/seo';
 import Link from 'next/link';
+
+export const metadata = generateSEO({
+  title: "Công cụ dự án Fenica | Tính vay mua nhà, diện tích và đầu tư căn hộ",
+  description:
+    "Sử dụng công cụ dự án Fenica để tính khoản vay mua căn hộ, diện tích sử dụng, dòng tiền đầu tư và hỗ trợ ra quyết định tài chính khi sở hữu căn hộ tại Dĩ An Bình Dương.",
+  path: "/cong-cu",
+  image: "/images/ho-boi-fenica.webp",
+  keywords: [
+    "công cụ fenica",
+    "tính vay fenica",
+    "tính lãi suất căn hộ fenica",
+    "công cụ mua nhà fenica",
+    "tính đầu tư fenica",
+    "công cụ dự án fenica",
+    "tính diện tích căn hộ fenica",
+    "calculator fenica"
+  ]
+});
 
 export default function ToolPage() {
   const tools = [

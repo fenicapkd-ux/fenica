@@ -67,7 +67,7 @@ const Featured = () => {
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">
               {propertyData.name}
             </h2>
             <div className="flex items-center gap-1 text-slate-400 font-medium">

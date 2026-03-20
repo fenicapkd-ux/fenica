@@ -18,7 +18,7 @@ const WP_API_URL = "http://batdongsan.atservice.vn/wp-json/wp/v2";
 
 async function getPost(slug: string): Promise<WPPost | null> {
   const res = await fetch(`${WP_API_URL}/posts?slug=${slug}&_embed`, {
-    next: { revalidate: 3600 },
+    // next: { revalidate: 3600 },
   });
   const posts: WPPost[] = await res.json();
   return posts.length > 0 ? posts[0] : null;

@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   experimental: {
     viewTransition: true,
   },
+  images: {
+    domains: ['batdongsan.atservice.vn'],
+  },
 };
 
 export default nextConfig;

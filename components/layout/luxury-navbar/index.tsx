@@ -11,9 +11,9 @@ const menuItems = [
   { label: 'Mặt bằng', href: '/mat-bang' },
   { label: 'Tiện ích', href: '/tien-ich' },
   { label: 'Sản phẩm', href: '/san-pham' },
+  { label: 'Tin tức', href: '/tin-tuc' },
   { label: 'Thư viện', href: '/thu-vien' },
   { label: 'Công cụ', href: '/cong-cu' },
-  { label: 'Tin tức', href: '/tin-tuc' },
 ]
 
 export default function LuxuryNavbar() {

@@ -32,9 +32,9 @@ export const metadata: Metadata = {
       'msvalidate.01': 'EE0EEBD5CFA877BEE3F858484B110AB0',
     },
   },
-  title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời Bền Vững',
+  title: 'Dự Án Căn Hộ Fenica Dĩ An Bình Dương – Chủ Đầu Tư Phượng Hoàng',
   description:
-    'Căn hộ fenica sở hữu vị trí chiến lược, thiết kế tinh tế, tiện ích đẳng cấp, lựa chọn lý tưởng để an cư lâu dài và đầu tư sinh lời bền vững tại thị trường bất động sản đầy tiềm năng.',
+    'Dự án căn hộ Fenica tại Dĩ An, Bình Dương. Quy mô 5.537 m², 2 block 22 tầng do Chủ đầu tư Phượng Hoàng và DLR phát triển. Giá bán chỉ từ 1.3 tỷ/căn.',
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
@@ -44,26 +44,27 @@ export const metadata: Metadata = {
     'fenica',
     'căn hộ fenica',
     'dự án fenica',
-    'căn hộ cao cấp fenica',
+    'fenica dĩ an',
+    'fenica bình dương',
+    'phượng hoàng',
+    'dự án phượng hoàng dĩ an',
+    'dlr',
     'mua căn hộ fenica',
-    'đầu tư căn hộ fenica',
-    'bất động sản fenica',
-    'căn hộ sang trọng',
-    'dự án căn hộ đầu tư'
+    'đầu tư căn hộ fenica'
   ],
 
   openGraph: {
-    title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng, Đầu Tư Sinh Lời',
+    title: 'Dự Án Căn Hộ Fenica Dĩ An Bình Dương – CĐT Phượng Hoàng',
     description:
-      'fenica mang đến không gian sống hiện đại, vị trí chiến lược, tiềm năng tăng giá bền vững cho nhà đầu tư.',
+      'Dự án căn hộ Fenica sở hữu vị trí chiến lược tại TP. Dĩ An. Quy mô 5.537m², 579 căn hộ thiết kế cao cấp.',
     url: 'https://fenica.xyz',
-    siteName: 'fenica',
+    siteName: 'Fenica',
     images: [
       {
         url: 'https://fenica.xyz/dinh-thap-fenica.webp',
         width: 1200,
         height: 630,
-        alt: 'Căn hộ fenica'
+        alt: 'Quy mô dự án căn hộ Fenica Bình Dương'
       }
     ],
     locale: 'vi_VN',
@@ -72,9 +73,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Dự Án Căn Hộ fenica – Sống Sang Trọng',
+    title: 'Dự Án Căn Hộ Fenica Dĩ An Bình Dương',
     description:
-      'Không gian sống đẳng cấp – cơ hội đầu tư sinh lời dài hạn.',
+      'Sống đẳng cấp và đầu tư sinh lời cùng Fenica Bình Dương.',
     images: ['https://fenica.xyz/dinh-thap-fenica.webp']
   },
 

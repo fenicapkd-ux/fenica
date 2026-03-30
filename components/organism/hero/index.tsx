@@ -8,8 +8,8 @@ const Hero = () => {
         title: "Căn hộ dành cho giới trẻ", // Dịch từ Futuristic Haven
         price: "Chỉ từ 36.500.000/m2 VNĐ", // Quy đổi xấp xỉ từ $4.75M
         stats: [
-            { icon: <Bed size={20} />, label: "3 Phòng ngủ" },
-            { icon: <Bath size={20} />, label: "3 Phòng tắm" },
+            { icon: <Bed size={20} />, label: "Phòng ngủ" },
+            { icon: <Bath size={20} />, label: "Phòng tắm" },
             { icon: <Car size={20} />, label: "Chỗ đỗ xe định danh" },
         ],
         buttons: {

@@ -11,6 +11,7 @@ type ProjectOverviewProps = {
     structure: string
     ownership: string
     handover: string
+    legal?: string
     apartmentTypes: ApartmentType[]
 }
 
@@ -23,6 +24,7 @@ export default function ProjectOverview({
     ownership,
     apartmentTypes,
     handover,
+    legal,
 }: ProjectOverviewProps) {
     return (
         <section className="bg-white py-20 px-6">
@@ -47,6 +49,7 @@ export default function ProjectOverview({
                                 ['Quy mô', scale],
                                 ['Sản phẩm', structure],
                                 ['Sở hữu', ownership],
+                                ['Pháp lý', legal || ''],
                                 ['Bàn giao', handover],
                             ].map(([label, value]) => (
                                 <li

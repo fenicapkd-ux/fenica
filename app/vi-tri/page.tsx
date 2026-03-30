@@ -2,11 +2,11 @@ import { generateSEO } from "@/lib/seo";
 import MapboxDirections from "../cong-cu/_components/MapboxDirections";
 
 export const metadata = generateSEO({
-  title: "Vị trí dự án Fenica",
-  description: "Vị trí chiến lược của dự án Fenica, kết nối trung tâm và tiện ích xung quanh.",
+  title: "Vị trí dự án Fenica Dĩ An Bình Dương | Kết nối giao thông chiến lược",
+  description: "Dự án Fenica tọa lạc mặt tiền Trần Quang Diệu, Tân Bình, Dĩ An, Bình Dương. Kết nối thuận tiện đến Metro, TP Thủ Đức và sân bay Tân Sơn Nhất.",
   path: "/vi-tri",
   image: "/images/ban-do-vi-tri-fenica.webp",
-  keywords: ["vị trí fenica", "fenica ở đâu", "địa chỉ fenica"]
+  keywords: ["vị trí fenica", "fenica ở đâu", "địa chỉ fenica", "fenica bình dương", "fenica dĩ an", "đường trần quang diệu dĩ an"]
 });
 
 export default function Home() {

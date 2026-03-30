@@ -2,7 +2,7 @@ export function generateSEO({
   title,
   description,
   path = "",
-  image = "/og.jpg",
+  image = "/images/dinh-thap-fenica.webp",
   keywords = []
 }: {
   title: string;
@@ -17,6 +17,10 @@ export function generateSEO({
   const autoKeywords = [
     "dự án fenica",
     "fenica",
+    "fenica dĩ an",
+    "fenica bình dương",
+    "chủ đầu tư phượng hoàng",
+    "dlr",
     "bất động sản fenica",
     "căn hộ fenica",
     "mua nhà fenica",

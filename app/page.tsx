@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import Hero from '@/components/organism/hero';
 import Properties from '@/components/organism/properties';
 import Featured from '@/components/organism/featured';

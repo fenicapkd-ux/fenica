@@ -36,7 +36,7 @@ export default function ProjectOverview({
                                 Tổng quan dự án
                             </p>
                             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-3">
-                                FENICA Residence
+                                FENICA
                             </h2>
                         </div>
                         <ul className="grid grid-cols-1 gap-2">

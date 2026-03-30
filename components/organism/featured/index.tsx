@@ -42,11 +42,11 @@ const Featured = () => {
             />
             
             {/* Navigation Arrows */}
-            <button className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 text-white rounded-full flex items-center justify-center hover:bg-[#00bfa5] transition-colors">
-              <ChevronLeft size={24} />
+            <button aria-label="Hình ảnh trước" className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 text-white rounded-full flex items-center justify-center hover:bg-[#00bfa5] transition-colors">
+              <ChevronLeft size={24} aria-hidden="true" />
             </button>
-            <button className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 text-white rounded-full flex items-center justify-center hover:bg-[#00bfa5] transition-colors">
-              <ChevronRight size={24} />
+            <button aria-label="Hình ảnh tiếp theo" className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/80 text-white rounded-full flex items-center justify-center hover:bg-[#00bfa5] transition-colors">
+              <ChevronRight size={24} aria-hidden="true" />
             </button>
 
             {/* Pagination Dots */}

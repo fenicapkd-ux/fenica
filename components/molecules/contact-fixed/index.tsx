@@ -31,9 +31,10 @@ const ContactFixed = () => {
         {isVisible && (
           <button 
             onClick={scrollToTop}
+            aria-label="Cuộn lên đầu trang"
             className="flex items-center justify-center w-12 md:w-14  h-12 md:h-14 bg-white text-gray-400 rounded-full shadow-lg border border-gray-100 hover:bg-gray-50 transition-all"
           >
-            <ChevronUp size={24} />
+            <ChevronUp size={24} aria-hidden="true" />
           </button>
         )}
 
@@ -41,6 +42,7 @@ const ContactFixed = () => {
         <a 
           href="https://zalo.me/0799036842" 
           target="_blank"
+          aria-label="Chat Zalo hỗ trợ khách hàng Fenica"
           className="group relative flex items-center justify-center w-12 md:w-14  h-12 md:h-14 bg-[#0068ff] text-white rounded-full shadow-xl hover:-translate-y-1 transition-all"
         >
           <span className="font-bold text-xl tracking-tighter">Zalo</span>
@@ -53,9 +55,10 @@ const ContactFixed = () => {
         <a 
           href="/lien-he" 
           target="_blank"
+          aria-label="Gửi email hoặc liên hệ trực tuyến"
           className="group relative flex items-center justify-center w-12 md:w-14  h-12 md:h-14 bg-white text-blue-600 rounded-full shadow-xl hover:-translate-y-1 transition-all border border-gray-50"
         >
-          <Mail size={28} />
+          <Mail size={28} aria-hidden="true" />
           <span className="absolute right-16 bg-gray-800 text-white text-xs px-3 py-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
             Gửi thông tin liên hệ
           </span>
@@ -64,10 +67,11 @@ const ContactFixed = () => {
         {/* Nút Hotline */}
         <a 
           href="tel:0799036842" 
+          aria-label="Gọi hotline tư vấn trực tiếp"
           className="group relative flex items-center justify-center w-12 md:w-14  h-12 md:h-14 bg-[#00c08b] text-white rounded-full shadow-xl hover:-translate-y-1 transition-all"
         >
           <div className="absolute inset-0 rounded-full bg-[#00c08b] animate-ping opacity-20"></div>
-          <Phone size={24} fill="currentColor" className="relative z-10" />
+          <Phone size={24} fill="currentColor" className="relative z-10" aria-hidden="true" />
           <span className="absolute right-16 bg-[#00c08b] text-white text-sm font-bold px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all shadow-lg whitespace-nowrap">
             Hotline: 0799.036.842
           </span>

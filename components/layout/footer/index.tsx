@@ -60,9 +60,9 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-4">
-            <a href="tel:0799036842" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Phone size={18} /></a>
-            <a href="/lien-he" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Mail size={18} /></a>
-            <a href="https://zalo.me/0799036842" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Instagram size={18} /></a>
+            <a href="tel:0799036842" aria-label="Gọi điện thoại Hotline" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Phone size={18} aria-hidden="true" /></a>
+            <a href="/lien-he" aria-label="Gửi thư liên hệ" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Mail size={18} aria-hidden="true" /></a>
+            <a href="https://zalo.me/0799036842" aria-label="Mở trang Zalo OA Fenica" className="p-2 border border-gray-800 rounded-full hover:bg-gray-800 transition"><Instagram size={18} aria-hidden="true" /></a>
           </div>
         </div>
 

@@ -42,11 +42,11 @@ const Testimonials = () => {
           
           {/* Navigation Arrows */}
           <div className="flex gap-3 pt-3">
-            <button className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:bg-gray-800 hover:text-white transition group">
-              <ChevronLeft size={20} className="group-hover:-translate-x-0.5 transition-transform" />
+            <button aria-label="Xem nhận xét trước" className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:bg-gray-800 hover:text-white transition group">
+              <ChevronLeft size={20} className="group-hover:-translate-x-0.5 transition-transform" aria-hidden="true" />
             </button>
-            <button className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:bg-gray-800 hover:text-white transition group">
-              <ChevronRight size={20} className="group-hover:translate-x-0.5 transition-transform" />
+            <button aria-label="Xem nhận xét tiếp theo" className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:bg-gray-800 hover:text-white transition group">
+              <ChevronRight size={20} className="group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
             </button>
           </div>
         </div>

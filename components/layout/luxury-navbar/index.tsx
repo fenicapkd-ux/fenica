@@ -25,7 +25,7 @@ export default function LuxuryNavbar() {
 
         <Link href="/" className="flex items-center gap-2">
           <div className="w-8 h-8 flex items-center justify-center">
-            <img src="/favicon.png" className='w-full object-cover' alt="" />
+            <img src="/favicon.png" className='w-full object-cover' alt="Logo dự án Fenica" />
           </div>
           <span className="text-xl font-semibold tracking-tight">
             Fenica
@@ -44,6 +44,8 @@ export default function LuxuryNavbar() {
 
           <button
             onClick={() => setOpen(true)}
+            aria-label="Mở Menu Điều Hướng"
+            aria-expanded={open}
             className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full font-medium hover:bg-opacity-90 transition"
           >
             <Menu size={18} />
@@ -63,9 +65,10 @@ export default function LuxuryNavbar() {
         <div className="absolute top-8 right-8 lg:right-16">
           <button
             onClick={() => setOpen(false)}
-            className="text-white p-3 rounded-full border border-white/20"
+            aria-label="Đóng Menu"
+            className="text-white p-3 rounded-full border border-white/20 hover:bg-white/10 transition"
           >
-            <X size={24} />
+            <X size={24} aria-hidden="true" />
           </button>
         </div>
 

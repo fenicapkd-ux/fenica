@@ -33,6 +33,9 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  images: {
+    domains: ['batdongsan.atservice.vn'],
+  },
 };
 
 export default nextConfig;

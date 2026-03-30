@@ -107,8 +107,8 @@ export default function RootLayout({
           <Toaster />
           <BreadcrumbSchema items={pages} />
           <RealEstateSchema />
-        </main>
-      </body>
+        </main >
+      </body >
     </html >
   );
 }

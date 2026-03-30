@@ -11,8 +11,7 @@ import RealEstateSchema from "@/components/seo/real-estate-schema";
 import dynamic from "next/dynamic";
 
 // Khóa Render SSR đối với các Form & Component tương tác Heavy JS (Để Mobile Lướt Mượt)
-const ContactFixed = dynamic(() => import('@/components/molecules/contact-fixed'));
-const ContactSection = dynamic(() => import('@/components/layout/contact'));
+import LazyContact from "@/components/layout/lazy-contact";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -104,8 +103,7 @@ export default function RootLayout({
         <LuxuryNavbar />
         <main className="bg-zinc-50">
           {children}
-          <ContactFixed />
-          <ContactSection />
+          <LazyContact />
           <Footer />
           <Toaster />
           <BreadcrumbSchema items={pages} />

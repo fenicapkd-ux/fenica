@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic';
 
 // Lazy Load cho toàn bộ Component dư thừa gây nghẽn màn hình Hero
 const ProjectOverview = dynamic(() => import('@/components/organism/project-overview'));
-const CarouselWithProgress = dynamic(() => import('@/components/organism/carousel-progress'));
+import LazyCarousel from '@/components/organism/lazy-carousel';
 const Properties = dynamic(() => import('@/components/organism/properties'));
 const Featured = dynamic(() => import('@/components/organism/featured'), { ssr: true });
 const Cta = dynamic(() => import('@/components/organism/cta'), { ssr: true });
@@ -65,8 +65,8 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <CarouselWithProgress images={PLANE} />
-        <CarouselWithProgress images={DESIGN_ROOM} />
+        <LazyCarousel images={PLANE} />
+        <LazyCarousel images={DESIGN_ROOM} />
         <Properties />
         <Testimonials />
         <Featured />

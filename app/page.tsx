@@ -1,17 +1,20 @@
 import Hero from '@/components/organism/hero';
-import Properties from '@/components/organism/properties';
-import Featured from '@/components/organism/featured';
-import Cta from '@/components/organism/cta';
-import Faq from '@/components/organism/faq';
-import Blog from '@/components/organism/blog';
-import Testimonials from '@/components/organism/testimonials';
-import PropertyGrid from '@/components/organism/property-grid';
 import SectionHeader from '@/components/molecules/section-header';
 import { fenicaOverview } from '@/mock-data/overview.data';
-import ProjectOverview from '@/components/organism/project-overview';
-import CarouselWithProgress from '@/components/organism/carousel-progress';
 import Link from 'next/link';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+// Lazy Load cho toàn bộ Component dư thừa gây nghẽn màn hình Hero
+const ProjectOverview = dynamic(() => import('@/components/organism/project-overview'));
+const CarouselWithProgress = dynamic(() => import('@/components/organism/carousel-progress'));
+const Properties = dynamic(() => import('@/components/organism/properties'));
+const Featured = dynamic(() => import('@/components/organism/featured'), { ssr: true });
+const Cta = dynamic(() => import('@/components/organism/cta'), { ssr: true });
+const Faq = dynamic(() => import('@/components/organism/faq'), { ssr: true });
+const Blog = dynamic(() => import('@/components/organism/blog'), { ssr: true });
+const Testimonials = dynamic(() => import('@/components/organism/testimonials'), { ssr: true });
+const PropertyGrid = dynamic(() => import('@/components/organism/property-grid'), { ssr: true });
 
 const PLANE = [
   "/images/fenica-mat-bang-tang-1.webp",

@@ -3,13 +3,16 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/layout/footer";
-import ContactFixed from "@/components/molecules/contact-fixed";
 import LuxuryNavbar from "@/components/layout/luxury-navbar";
-import ContactSection from "@/components/layout/contact";
 import { Toaster } from '@/components/ui/sonner';
 import BreadcrumbSchema from "@/components/seo/breadcrumb-schema";
 import { pages } from "@/mock-data/breadcrumb.data";
 import RealEstateSchema from "@/components/seo/real-estate-schema";
+import dynamic from "next/dynamic";
+
+// Khóa Render SSR đối với các Form & Component tương tác Heavy JS (Để Mobile Lướt Mượt)
+const ContactFixed = dynamic(() => import('@/components/molecules/contact-fixed'));
+const ContactSection = dynamic(() => import('@/components/layout/contact'));
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 

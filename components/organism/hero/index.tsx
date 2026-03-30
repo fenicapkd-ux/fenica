@@ -30,6 +30,7 @@ const Hero = () => {
                 priority
                 className="object-cover z-0"
                 sizes="100vw"
+                unoptimized
             />
             <div
                 className="absolute inset-0 z-0"

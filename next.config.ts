@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
   },
   images: {
     minimumCacheTTL: 31536000, // Ép Vercel/NextJS cache hình ảnh đã optimize tối đa 1 năm
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'batdongsan.atservice.vn',
+      },
+    ],
   },
   async headers() {
     return [
@@ -32,9 +38,6 @@ const nextConfig: NextConfig = {
         ],
       },
     ];
-  },
-  images: {
-    domains: ['batdongsan.atservice.vn'],
   },
 };
 

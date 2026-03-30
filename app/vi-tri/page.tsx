@@ -1,4 +1,7 @@
 import { generateSEO } from "@/lib/seo";
+import dynamic from "next/dynamic";
+import Image from "next/image";
+
 import MapboxDirections from "../cong-cu/_components/MapboxDirections";
 
 export const metadata = generateSEO({
@@ -13,11 +16,14 @@ export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className='w-full'>
-        <div className='w-full'>
-          <img
+        <div className='w-full relative h-[600px]'>
+          <Image
             src={"/images/ban-do-vi-tri-fenica.webp"}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            alt={""}
+            className="object-cover"
+            alt={"Bản đồ vị trí Fenica Dĩ An"}
+            fill
+            sizes="100vw"
+            priority
           />
         </div>
         <div className="w-full overflow-hidden">

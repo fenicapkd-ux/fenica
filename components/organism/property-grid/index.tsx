@@ -1,4 +1,5 @@
 import { BedDouble, Bath, Square, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const PropertyGrid = () => {
   const propertyList = [
@@ -37,10 +38,12 @@ const PropertyGrid = () => {
           <div key={item.id} className="group bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
             {/* Image Section */}
             <div className="relative aspect-[4/3] overflow-hidden">
-              <img 
+              <Image 
                 src={item.image} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
                 alt={item.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
               {item.featured && (
                 <div className="absolute top-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-[#c98266] group-hover:text-white transition-colors cursor-pointer">

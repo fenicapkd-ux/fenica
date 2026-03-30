@@ -5,7 +5,7 @@ const PLANE = [
   "/images/fenica-mat-bang-tang-22.webp",
 ]
 
-
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -30,8 +30,15 @@ export default function AboutPage() {
       <div className="grid grid-cols-2 gap-8">
         {
           PLANE.map((esc, idx) => (
-            <div key={idx} className="rounded-xl overflow-hidden shadow ">
-              <img src={esc} alt="" className="w-full h-full object-cover" />
+            <div key={idx} className="relative aspect-[4/3] rounded-xl overflow-hidden shadow border border-slate-100">
+              <Image 
+                src={esc} 
+                alt={`Mặt bằng tầng ${idx+1}`} 
+                fill
+                priority={idx < 2}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover" 
+              />
             </div>
           ))
         }

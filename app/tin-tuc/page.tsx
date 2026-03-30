@@ -23,13 +23,29 @@ export const metadata = generateSEO({
 export default function BlogPage() {
   const posts = getAllPosts()
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": posts.map((post, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://fenica.xyz/tin-tuc/${post.slug}`,
+      "name": post.title
+    }))
+  };
+
   return (
-    <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Tin tức</h1>
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+    <div className="max-w-3xl mx-auto p-6 pt-24 min-h-screen">
+      <h1 className="text-4xl font-black mb-8 text-[#c98266]">Tin tức & Sự kiện</h1>
 
       {posts.map((post) => (
-        <div key={post.slug} className="mb-6 border-b pb-4">
-          <Link href={`/blog/${post.slug}`}>
+        <div key={post.slug} className="mb-8 border-b border-slate-100 pb-6 hover:translate-x-2 transition-transform duration-300">
+          <Link href={`/tin-tuc/${post.slug}`}>
             <h2 className="text-xl font-semibold hover:underline">
               {post.title}
             </h2>
@@ -40,5 +56,6 @@ export default function BlogPage() {
         </div>
       ))}
     </div>
+    </>
   )
 }

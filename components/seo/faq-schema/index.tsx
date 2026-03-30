@@ -1,4 +1,3 @@
-import Script from "next/script";
 
 type FAQItem = {
   question: string;
@@ -26,10 +25,9 @@ export default function FAQSchema({ faqs }: FAQSchemaProps) {
   };
 
   return (
-    <Script
+    <script
       id="faq-schema"
       type="application/ld+json"
-      strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(schema)
       }}

@@ -4,6 +4,8 @@ const EmbedFrame = () => {
     return (
         <iframe
             src="https://presentation.fenica.xyz"
+            title="Fenica Tour 360"
+            loading="lazy"
             style={{
                 position: "fixed",
                 top: 0,

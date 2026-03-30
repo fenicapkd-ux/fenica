@@ -15,6 +15,8 @@ type ProjectOverviewProps = {
     apartmentTypes: ApartmentType[]
 }
 
+import Image from "next/image"
+
 export default function ProjectOverview({
     location,
     investor,
@@ -65,11 +67,13 @@ export default function ProjectOverview({
                         </ul>
                     </div>
                     <div>
-                        <div className="rounded-2xl overflow-hidden">
-                            <img
+                        <div className="rounded-2xl overflow-hidden relative w-full aspect-[4/3]">
+                            <Image
                                 src="/images/goc-nhin-hoan-hon-fenica.webp"
                                 alt="Fenica Interior"
-                                className="w-full h-full object-cover"
+                                className="object-cover"
+                                fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
 

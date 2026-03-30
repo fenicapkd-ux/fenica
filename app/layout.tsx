@@ -7,7 +7,6 @@ import ContactFixed from "@/components/molecules/contact-fixed";
 import LuxuryNavbar from "@/components/layout/luxury-navbar";
 import ContactSection from "@/components/layout/contact";
 import { Toaster } from '@/components/ui/sonner';
-import TaskbarMusic from "@/components/layout/taskbar-music";
 import BreadcrumbSchema from "@/components/seo/breadcrumb-schema";
 import { pages } from "@/mock-data/breadcrumb.data";
 import RealEstateSchema from "@/components/seo/real-estate-schema";
@@ -105,7 +104,6 @@ export default function RootLayout({
           <ContactFixed />
           <ContactSection />
           <Footer />
-          <TaskbarMusic />
           <Toaster />
           <BreadcrumbSchema items={pages} />
           <RealEstateSchema />

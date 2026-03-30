@@ -1,10 +1,11 @@
 import { Bed, Bath, Car } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
     const projectData = {
         name: "Dự án Fenica",
-        location: "Trần Quang Diệu, P.Tân Đông Hiệp, TP.HCM",
+        location: "Đ.Trần Quang Diệu, P.Tân Bình, TP.Dĩ An, Bình Dương",
         title: "Căn hộ dành cho giới trẻ", // Dịch từ Futuristic Haven
         price: "Chỉ từ 36.500.000/m2 VNĐ", // Quy đổi xấp xỉ từ $4.75M
         stats: [
@@ -22,10 +23,18 @@ const Hero = () => {
     return (
         <div className="relative min-h-screen w-full bg-[#f1dfd9] overflow-hidden font-sans text-white">
             {/* Background Image/Gradient Layer */}
+            <Image
+                src="/images/goc-nhin-du-an-fenica.webp"
+                alt="Dự án Fenica"
+                fill
+                priority
+                className="object-cover z-0"
+                sizes="100vw"
+            />
             <div
-                className="absolute inset-0 bg-cover bg-center z-0"
+                className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: `linear-gradient(to right, rgba(201, 130, 102, 0.9), transparent), url('/images/goc-nhin-du-an-fenica.webp')`
+                    backgroundImage: `linear-gradient(to right, rgba(201, 130, 102, 0.9), transparent)`
                 }}
             />
 

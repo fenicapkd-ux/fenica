@@ -7,6 +7,7 @@ import {
   Map, Bus, Plane, Trophy, 
   CalendarClock, CheckCircle2, Trees
 } from "lucide-react";
+import Image from "next/image";
 
 export const metadata = generateSEO({
   title: "Tổng quan dự án Fenica Dĩ An Bình Dương | Vị trí, tiện ích, pháp lý và mặt bằng",
@@ -78,10 +79,12 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="rounded-[2rem] overflow-hidden shadow-2xl relative group h-[400px]">
-            <img 
+            <Image 
               src="/images/ban-do-vi-tri-fenica.webp" 
               alt="Bản đồ vị trí Fenica" 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
         </div>

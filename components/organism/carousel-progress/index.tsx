@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Progress } from "@/components/ui/progress";
+import Image from "next/image";
 
 type CarouselWithProgressProp = {
  images: Array<string>;
@@ -40,11 +41,15 @@ export default function CarouselWithProgress({images}: CarouselWithProgressProp)
         <CarouselContent>
           {images.map((image) => (
             <CarouselItem key={image}>
-              <img
-                alt="dddepth-248"
-                className="size-full rounded-xl object-cover"
-                src={image}
-              />
+              <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden">
+                <Image
+                  alt="Dự án Fenica Image"
+                  className="object-cover"
+                  src={image}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 100vw"
+                />
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>

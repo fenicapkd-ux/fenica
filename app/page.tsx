@@ -11,6 +11,7 @@ import { fenicaOverview } from '@/mock-data/overview.data';
 import ProjectOverview from '@/components/organism/project-overview';
 import CarouselWithProgress from '@/components/organism/carousel-progress';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const PLANE = [
   "/images/fenica-mat-bang-tang-1.webp",
@@ -32,11 +33,13 @@ export default function Home() {
       <div className='w-full'>
         <Hero />
         <ProjectOverview {...fenicaOverview} />
-        <div className='w-full'>
-          <img
+        <div className='w-full relative h-[600px] group overflow-hidden'>
+          <Image
             src={"/images/ban-do-vi-tri-fenica.webp"}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            alt={""}
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            alt={"Vị trí dự án Fenica Dĩ An"}
+            fill
+            sizes="100vw"
           />
         </div>
         <div className="px-4 md:px-0 mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
